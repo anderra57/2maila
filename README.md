@@ -19,4 +19,4 @@ Klaseko ariketak eta pare bat liburu.
 - ### [Sistema Eragileen Oinarriak](https://github.com/anderra57/2maila/tree/master/2.%20KUATRI/SEO)
  Gaiak.
 - ### [Software Ingeniaritza](https://github.com/anderra57/2maila/tree/master/2.%20KUATRI/SI)
-Gaiak.
+Gaiak eta ariketak.
