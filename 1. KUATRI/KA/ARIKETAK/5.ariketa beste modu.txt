@@ -1,0 +1,72 @@
+egoera equ 0x00
+ev1 equ p1.4
+ev2 equ p1.5
+na equ p1.0
+nb equ p1.1
+hasieraketak:
+mov egoera,#0x00
+setb ev1
+clr ev2
+;---------------------------------------------------
+egoera_zehaztu:
+
+mov a,na
+jz na0
+mov a,nb
+jz na1nb0
+mov egoera,#0x03
+jmp zehaztu_amaiera
+
+na1nb0:
+mov egoera,#0x02
+jmp zehaztu_amaiera
+
+na0:
+mov a,nb
+jz na0nb0
+mov egoera,#0x01
+jmp zehaztu_amaiera
+
+na0nb0:
+mov egoera,#0x00
+jmp zehaztu_amaiera
+
+
+;---------------------------------------------------
+egoera_makina:
+mov a,egoera
+rl a
+mov dptr,#egoera_taula
+jmp @a+dptr
+;---------------------------------------------------
+egoera_taula:
+ajmp egoera_0
+ajmp egoera_1
+ajmp egoera_2
+ajmp egoera_3
+;---------------------------------------------------
+egoera_0:
+mov a,ekintza
+rl a
+mov dptr,#gert_taula_0
+jmp @a+dptr
+egoera_1:
+mov a,ekintza
+rl a
+mov dptr,#gert_taula_1
+jmp @a+dptr
+egoera_2:
+mov a,ekintza
+rl a
+mov dptr,#gert_taula_2
+jmp @a+dptr
+egoera_3:
+mov a,ekintza
+rl a
+mov dptr,#gert_taula_3
+jmp @a+dptr
+;---------------------------------------------------
+gert_taula_0:
+ajmp ekintza_0
+ajmp ekintza_1
+ajmp ekintza_2

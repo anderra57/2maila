@@ -1,0 +1,44 @@
+A51 MACRO ASSEMBLER  NUEVO_DOCUMENTO_DE_TEXTO                                             09/10/2019 19:15:58 PAGE     1
+
+
+MACRO ASSEMBLER A51 V6.14
+OBJECT MODULE PLACED IN .\Nuevo documento de texto.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE .\Nuevo documento de texto.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;Adibidea: JON KK
+                       2     
+0000                   3     HASIERA:
+                       4     
+0000 7803              5     MOV R0,#0X03
+0002 7409              6     MOV A,#0X09
+0004 28                7     ADD A,R0
+                       8     
+0005 0109              9     AJMP AMAIERA
+                      10     
+0007 E500             11     MOV A,0X00
+                      12     
+0009                  13     AMAIERA:
+                      14     
+0009 0100             15     AJMP HASIERA
+                      16     
+                      17     END
+                             
+                             
+A51 MACRO ASSEMBLER  NUEVO_DOCUMENTO_DE_TEXTO                                             09/10/2019 19:15:58 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AMAIERA. . . . . .  C ADDR   0009H   A   
+HASIERA. . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

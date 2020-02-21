@@ -1,0 +1,42 @@
+BL51 BANKED LINKER/LOCATER V4.14                                                        09/10/2019  19:15:58  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V4.14, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE Nuevo documento de texto.obj TO adibidea RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Nuevo documento de texto.obj (NUEVO_DOCUMENTO_DE_TEXTO)
+
+
+LINK MAP OF MODULE:  adibidea (NUEVO_DOCUMENTO_DE_TEXTO)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000BH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  adibidea (NUEVO_DOCUMENTO_DE_TEXTO)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        NUEVO_DOCUMENTO_DE_TEXTO
+  C:0009H         SYMBOL        AMAIERA
+  C:0000H         SYMBOL        HASIERA
+  C:0000H         LINE#         5
+  C:0002H         LINE#         6
+  C:0004H         LINE#         7
+  C:0005H         LINE#         9
+  C:0007H         LINE#         11
+  C:0009H         LINE#         15
+  -------         ENDMOD        NUEVO_DOCUMENTO_DE_TEXTO
+
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

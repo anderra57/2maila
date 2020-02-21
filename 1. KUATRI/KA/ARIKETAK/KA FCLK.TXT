@@ -1,0 +1,10 @@
+FCLK		FTIMER		TOBJ		MODE0		MODE1		MODE2		MODE3
+12MHz		1MHz			6ms
+24MHz							34ms
+10MHz							50ms
+12Hz							1s
+24MHz							30ms
+12MHz							555us
+12MHz							555us
+
+

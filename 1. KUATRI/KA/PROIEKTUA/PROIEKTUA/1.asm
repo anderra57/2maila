@@ -1,0 +1,4 @@
+mov A,#0x10
+mov #0x60,A
+mov B,#0x60
+end

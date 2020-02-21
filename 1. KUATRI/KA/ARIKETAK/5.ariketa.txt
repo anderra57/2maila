@@ -1,0 +1,78 @@
+egoera equ 0x00
+ev1 equ p1.4
+ev2 equ p1.5
+na equ p1.0
+nb equ p1.1
+hasieraketak:
+mov egoera,#0x00
+setb ev1
+clr ev2
+;---------------------------------------------------
+egoera_zehaztu:
+;(...) if
+mov a,na
+jz na0
+mov a,nb
+jz na1nb0
+mov egoera,#0x03
+jmp zehaztu_amaiera
+
+egoera equ 0x00
+ev1 equ p1.4
+ev2 equ p1.5
+na equ p1.0
+nb equ p1.1
+hasieraketak:
+mov egoera,#0x00
+setb ev1
+clr ev2
+;---------------------------------------------------
+egoera_zehaztu:
+
+mov a,na
+jz na0
+jnz na1
+
+na1:
+mov a,nb
+jz na1nb0
+jnz na1nb1
+
+na1nb1:
+jmp egoera_3
+
+na1nb0:
+jmp egoera_2
+
+na0:
+mov a,nb
+jz na0nb0
+jnz na0nb1
+
+na0nb1:
+jmp egoera_1
+
+na0nb0:
+jmp egoera_0
+
+;---------------------------------------------------
+
+egoera_0:
+setb ev1
+clr ev2
+jmp egoera_zehaztu
+
+egoera_1:
+clr ev1
+clr ev2
+jmp egoera_zehaztu
+
+egoera_2:
+clr ev1
+clr ev2
+jmp egoera_zehaztu
+
+egoera_3:
+clr ev1
+setb ev2
+jmp egoera_zehaztu
