@@ -1,0 +1,58 @@
+Your MariaDB connection id is 2
+Server version: 10.1.37-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+5 rows in set (0.13 sec)
+
+MariaDB [(none)]> CREATE DATABASE JOKOA;
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| jokoa              |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+6 rows in set (0.00 sec)
+
+MariaDB [(none)]> use jokoa;
+Database changed
+MariaDB [jokua]> create table jokalaria(NAN INT NOT NULL, IZENA VARCHAR(10), ABIZENA VARCHAR(10), PRIMARY KEY(NAN));
+Query OK, 0 rows affected (0.21 sec)
+
+MariaDB [jokua]> create table PARTIDA(KODEA INT NOT NULL, EGUNA DATE, IRAUPENA INT, JOKALARIPUNTUAK INT, ORDENAGAILUPUNTUAK INT, JOKNAN INT, PRIMARY KEY(KODEA), FOREIGN KEY(JOKNAN) REFERENCES jokalaria(NAN));
+Query OK, 0 rows affected (0.11 sec)
+
+MariaDB [jokua]> SHOW TABLES;
++-----------------+
+| Tables_in_jokoa |
++-----------------+
+| jokalaria       |
+| partida         |
++-----------------+
+2 rows in set (0.01 sec)
+
+MariaDB [jokua]> SELECT * FROM jokalaria;
+Empty set (0.01 sec)
+
+MariaDB [jokua]> SELECT * FROM partida;
+Empty set (0.00 sec)

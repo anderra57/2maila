@@ -1,0 +1,181 @@
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+5 rows in set (0.02 sec)
+
+MariaDB [(none)]> CREATE DATABASE ENPRESA;
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [(none)]> USE ENPRESA;
+Database changed
+MariaDB [ENPRESA]> STATUS
+--------------
+
+Connection id:		3
+Current database:	enpresa
+Current user:		root@localhost
+SSL:			Not in use
+Using delimiter:	;
+Server:			MariaDB
+Server version:		10.1.37-MariaDB mariadb.org binary distribution
+Protocol version:	10
+Connection:		localhost via TCP/IP
+Server characterset:	latin1
+Db     characterset:	latin1
+Client characterset:	cp850
+Conn.  characterset:	cp850
+TCP port:		3306
+Uptime:			3 min 59 sec
+
+Threads: 1  Questions: 9  Slow queries: 0  Opens: 17  Flush tables: 1  Open tables: 11  Queries per second avg: 0.037
+--------------
+
+MariaDB [ENPRESA]> SHOW TABLES;
+Empty set (0.00 sec)
+
+MariaDB [ENPRESA]> CREATE TABLE LANGILE
+    -> (NSS CHAR(15) NOT NULL,
+    -> PRIMARY KEY(NSS));
+Query OK, 0 rows affected (0.17 sec)
+
+MariaDB [ENPRESA]> CREATE TABLE SAILA(SIZENA VARCHAR(15) NOT NULL,SZENBAKIA INT NOT NULL,NSS_ZUZENDARIA CHAR(9),HDATA DATE,PRIMARY KEY(SZENBAKIA),UNIQUE(SIZENA),FOREIGN KEY(NSS_ZUZENDARIA) REFERENCES LANGILE(NSS) ON UPDATE CASCADE ON DELETE SET NULL);
+Query OK, 0 rows affected (0.13 sec)
+
+MariaDB [ENPRESA]> SHOW CREATE TABLE SAILA;
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                                                                                                                                                                                                                                                                                                                                |
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| SAILA | CREATE TABLE `saila` (
+  `SIZENA` varchar(15) NOT NULL,
+  `SZENBAKIA` int(11) NOT NULL,
+  `NSS_ZUZENDARIA` char(9) DEFAULT NULL,
+  `HDATA` date DEFAULT NULL,
+  PRIMARY KEY (`SZENBAKIA`),
+  UNIQUE KEY `SIZENA` (`SIZENA`),
+  KEY `NSS_ZUZENDARIA` (`NSS_ZUZENDARIA`),
+  CONSTRAINT `saila_ibfk_1` FOREIGN KEY (`NSS_ZUZENDARIA`) REFERENCES `langile` (`NSS`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
+MariaDB [ENPRESA]> DESCRIBE SAILA;
++----------------+-------------+------+-----+---------+-------+
+| Field          | Type        | Null | Key | Default | Extra |
++----------------+-------------+------+-----+---------+-------+
+| SIZENA         | varchar(15) | NO   | UNI | NULL    |       |
+| SZENBAKIA      | int(11)     | NO   | PRI | NULL    |       |
+| NSS_ZUZENDARIA | char(9)     | YES  | MUL | NULL    |       |
+| HDATA          | date        | YES  |     | NULL    |       |
++----------------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+MariaDB [ENPRESA]> INSERT INTO LANGILE VALUES ('123456789');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [ENPRESA]> INSERT INTO SAILA VALUES ('CALIDAD', 25, '123456789', '2000-01-01');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [ENPRESA]> SELECT * FROM SAILA
+    -> ;
++---------+-----------+----------------+------------+
+| SIZENA  | SZENBAKIA | NSS_ZUZENDARIA | HDATA      |
++---------+-----------+----------------+------------+
+| CALIDAD |        25 | 123456789      | 2000-01-01 |
++---------+-----------+----------------+------------+
+1 row in set (0.00 sec)
+
+MariaDB [ENPRESA]> ALTER TABLE SAILA DROP HDATA;
+Query OK, 0 rows affected (0.22 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [ENPRESA]> ALTER TABLE SAILA ADD HDATA DATE;
+Query OK, 0 rows affected (0.21 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [ENPRESA]> ALTER TABLE SAILA ALTER HDATA SET DEFAULT '2003-01-01'; 
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [ENPRESA]> INSERT INTO SAILA(SIZENA,SZENBAKIA) VALUES ('VENTAS',35);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [ENPRESA]> SELECT * FROM SAILA;
++---------+-----------+----------------+------------+
+| SIZENA  | SZENBAKIA | NSS_ZUZENDARIA | HDATA      |
++---------+-----------+----------------+------------+
+| CALIDAD |        25 | 123456789      | NULL       |
+| VENTAS  |        35 | NULL           | 2003-01-01 |
++---------+-----------+----------------+------------+
+2 rows in set (0.00 sec)
+
+MariaDB [ENPRESA]> UPDATE SAILA SET HDATA=CURRENT_DATE WHERE SIZENA='CALIDAD';
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [ENPRESA]> SELECT * FROM SAILA;
++---------+-----------+----------------+------------+
+| SIZENA  | SZENBAKIA | NSS_ZUZENDARIA | HDATA      |
++---------+-----------+----------------+------------+
+| CALIDAD |        25 | 123456789      | 2020-01-27 |
+| VENTAS  |        35 | NULL           | 2003-01-01 |
++---------+-----------+----------------+------------+
+2 rows in set (0.00 sec)
+
+MariaDB [ENPRESA]> DELETE FROM SAILA WHERE SIZENA='VENTAS';
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [ENPRESA]> CREATE TABLE PROIEKTUA
+    -> (PKODE INT NOT NULL,
+    -> PIZENA VARCHAR(20) NOT NULL,
+    -> HASDATA DATE,
+    -> BUKDATA DATE,
+    -> PSAILA INT NOT NULL,
+    -> FOREIGN KEY (PSAILA) REFERENCES SAILA(SZENBAKIA)
+    -> );
+Query OK, 0 rows affected (0.07 sec)
+
+MariaDB [ENPRESA]> SELECT * FROM PROIEKTUA;
+Empty set (0.00 sec)
+
+MariaDB [ENPRESA]> INSERT INTO PROIEKTUA VALUES (1,'proi01','2017-02-13','2017-02-28',25);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [ENPRESA]> SELECT * FROM PROIEKTUA;
++-------+--------+------------+------------+--------+
+| PKODE | PIZENA | HASDATA    | BUKDATA    | PSAILA |
++-------+--------+------------+------------+--------+
+|     1 | proi01 | 2017-02-13 | 2017-02-28 |     25 |
++-------+--------+------------+------------+--------+
+1 row in set (0.00 sec)
+
+MariaDB [ENPRESA]> SELECT * FROM SAILA;
++---------+-----------+----------------+------------+
+| SIZENA  | SZENBAKIA | NSS_ZUZENDARIA | HDATA      |
++---------+-----------+----------------+------------+
+| CALIDAD |        25 | 123456789      | 2020-01-27 |
++---------+-----------+----------------+------------+
+1 row in set (0.00 sec)
+
+MariaDB [ENPRESA]> INSERT INTO SAILA(SIZENA,SZENBAKIA) VALUES ('VENTAS',35);
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [ENPRESA]> INSERT INTO PROIEKTUA (PKODE,PIZENA,PSAILA) VALUES (2,'proi02',35);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [ENPRESA]> SELECT * FROM PROIEKTUA;
++-------+--------+------------+------------+--------+
+| PKODE | PIZENA | HASDATA    | BUKDATA    | PSAILA |
++-------+--------+------------+------------+--------+
+|     1 | proi01 | 2017-02-13 | 2017-02-28 |     25 |
+|     2 | proi02 | NULL       | NULL       |     35 |
++-------+--------+------------+------------+--------+
+2 rows in set (0.00 sec)
+
+MariaDB [ENPRESA]> NOTEE

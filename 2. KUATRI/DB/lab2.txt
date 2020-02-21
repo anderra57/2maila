@@ -1,0 +1,105 @@
+MariaDB [(none)]> CREATE DATABASE UNIBERTSITATEA;
+Query OK, 1 row affected (0.010 sec)
+
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
+| unibertsitatea     |
++--------------------+
+6 rows in set (0.022 sec)
+
+MariaDB [(none)]> USE UNIBERTSITATEA;
+Database changed
+MariaDB [UNIBERTSITATEA]> STATUS;
+--------------
+
+Connection id:		8
+Current database:	unibertsitatea
+Current user:		root@localhost
+SSL:			Not in use
+Using delimiter:	;
+Server:			MariaDB
+Server version:		10.4.10-MariaDB mariadb.org binary distribution
+Protocol version:	10
+Connection:		localhost via TCP/IP
+Server characterset:	utf8mb4
+Db     characterset:	utf8mb4
+Client characterset:	utf8mb4
+Conn.  characterset:	utf8mb4
+TCP port:		3306
+Uptime:			11 min 16 sec
+
+Threads: 7  Questions: 8  Slow queries: 0  Opens: 16  Flush tables: 1  Open tables: 10  Queries per second avg: 0.011
+--------------
+
+MariaDB [UNIBERTSITATEA]> SHOW TABLES
+    -> ;
+Empty set (0.000 sec)
+
+MariaDB [UNIBERTSITATEA]> CREATE TABLE IKASLEA
+    -> KODEA INT NOT NULL,
+    -> IZENA VARCHAR(10) NOT NULL,
+    -> 
+    -> 
+    -> 
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INT NOT NULL,
+IZENA VARCHAR(10) NOT NULL,' at line 2
+
+MariaDB [UNIBERTSITATEA]> CREATE TABLE IKASLEA (KODEA INT NOT NULL,IZENA VARCHAR(10),URTEA INT,ESPEZIALIZAZIOA VARCHAR(10),PRIMARY KEY(KODEA));
+Query OK, 0 rows affected (0.052 sec)
+
+MariaDB [UNIBERTSITATEA]> SHOW TABLES;
++--------------------------+
+| Tables_in_unibertsitatea |
++--------------------------+
+| ikaslea                  |
++--------------------------+
+1 row in set (0.001 sec)
+
+MariaDB [unibertsitatea]> CREATE TABLE IRAKASGAIA(KODEA INT NOT NULL, IZENA VARCHAR(10),KREDITUAK INT,SAILA VARCHAR(10),PRIMARY KEY(KODEA));
+Query OK, 0 rows affected (0.043 sec)
+
+MariaDB [unibertsitatea]> CREATE TABLE TALDEA(IDENTIFIKATZAILEA INT NOT NULL, LAUHILABETEA INT, URTEA INT, IRAKASLEA VARCHAR(10), IRKODEA INT, PRIMARY KEY(IDENTIFIKATZAILEA), FOREIGN KEY(IRKODEA) REFERENCES IRAKASGAIA(KODEA));
+Query OK, 0 rows affected (0.053 sec)
+
+MariaDB [unibertsitatea]> CREATE TABLE MATRIKULA(DO TIME NOT NULL,IKKODEA INT NOT NULL, PREZIOA FLOAT, OHARRA VARCHAR(20), PRIMARY KEY(DO,IKKODEA),FOREIGN KEY (IKKODEA) REFERENCES IKASLEA(KODEA));
+Query OK, 0 rows affected (0.052 sec)
+
+MariaDB [unibertsitatea]> SHOW TABLES;
++--------------------------+
+| Tables_in_unibertsitatea |
++--------------------------+
+| ikaslea                  |
+| irakasgaia               |
+| matrikula                |
+| taldea                   |
++--------------------------+
+4 rows in set (0.001 sec)
+
+MariaDB [unibertsitatea]> CREATE TABLE NOTAK(IKASLEKODEA INT NOT NULL, TALDEIDENT INT NOT NULL, NOTA FLOAT, PRIMARY KEY(IKASLEKODEA,TALDEIDENT), FOREIGN KEY(IKASLEKODEA) REFERENCES IKASLEA(KODEA), FOREIGN KEY (TALDEIDENT) REFERENCES TALDEA(IDENTIFIKATZAILEA));
+Query OK, 0 rows affected (0.052 sec)
+
+MariaDB [unibertsitatea]> CREATE TABLE BALDINTZAK(IRAKASGAIKODEA INT NOT NULL, AURREBKODEA INT NOT NULL, PRIMARY KEY(IRAKASGAIKODEA,AURREBKODEA),FOREIGN KEY (IRAKASGAIKODEA) REFERENCES IRAKASGAIA(KODEA), FOREIGN KEY (AURREBKODEA) REFERENCES IRAKASGAIA(KODEA));
+Query OK, 0 rows affected (0.055 sec)
+
+MariaDB [unibertsitatea]> SHOW TABLES;
++--------------------------+
+| Tables_in_unibertsitatea |
++--------------------------+
+| baldintzak               |
+| ikaslea                  |
+| irakasgaia               |
+| matrikula                |
+| notak                    |
+| taldea                   |
++--------------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [unibertsitatea]> NOTEE

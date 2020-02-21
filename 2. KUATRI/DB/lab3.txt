@@ -1,0 +1,171 @@
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
+| unibertsitatea     |
++--------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [(none)]> CREATE DATABASE ONTZIAK;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| ontziak            |
+| performance_schema |
+| phpmyadmin         |
+| test               |
+| unibertsitatea     |
++--------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [(none)]> USE ONTZIAK;
+Database changed
+
+MariaDB [ONTZIAK]> CREATE TABLE ONTZIMOTA(KODEA INT NOT NULL,TONAK INT,MATERIALA VARCHAR(10),PRIMARY KEY(KODEA));
+Query OK, 0 rows affected (0.045 sec)
+
+MariaDB [ONTZIAK]> CREATE TABLE ITSASOA(IZENA VARCHAR(10) NOT NULL,SAKONERA INT,PRIMARY KEY(IZENA));
+Query OK, 0 rows affected (0.037 sec)
+
+MariaDB [ONTZIAK]> CREATE TABLE HERRIALDEA(IZENA VARCHAR(10) NOT NULL, KONTINENTEA VARCHAR(10) NOT NULL, PRIMARY KEY(IZENA));
+Query OK, 0 rows affected (0.042 sec)
+
+MariaDB [ONTZIAK]> SHOW TABLES;
++-------------------+
+| Tables_in_ontziak |
++-------------------+
+| herrialdea        |
+| itsasoa           |
+| ontzimota         |
++-------------------+
+3 rows in set (0.001 sec)
+
+MariaDB [ONTZIAK]> CREATE TABLE PORTUA(HERRIIZENA VARCHAR(10) NOT NULL, PORTIZENA VARCHAR(10) NOT NULL, DESKRIBAPENA VARCHAR(20), ITSASOIZENA VARCHAR(10), PRIMARY KEY(HERRIIZENA,PORTIZENA), FOREIGN KEY (HERRIIZENA) REFERENCES HERRIALDEA(IZENA),FOREIGN KEY (ITSASOIZENA) REFERENCES ITSASOA(IZENA));
+Query OK, 0 rows affected (0.041 sec)
+
+MariaDB [ONTZIAK]> SHOW TABLES;
++-------------------+
+| Tables_in_ontziak |
++-------------------+
+| herrialdea        |
+| itsasoa           |
+| ontzimota         |
+| portua            |
++-------------------+
+4 rows in set (0.001 sec)
+
+MariaDB [ONTZIAK]> SHOW CREATE TABLE PORTUA;
++--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table  | Create Table                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
++--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| PORTUA | CREATE TABLE `portua` (
+  `HERRIIZENA` varchar(10) NOT NULL,
+  `PORTIZENA` varchar(10) NOT NULL,
+  `DESKRIBAPENA` varchar(20) DEFAULT NULL,
+  `ITSASOIZENA` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`HERRIIZENA`,`PORTIZENA`),
+  KEY `ITSASOIZENA` (`ITSASOIZENA`),
+  CONSTRAINT `portua_ibfk_1` FOREIGN KEY (`HERRIIZENA`) REFERENCES `herrialdea` (`IZENA`),
+  CONSTRAINT `portua_ibfk_2` FOREIGN KEY (`ITSASOIZENA`) REFERENCES `itsasoa` (`IZENA`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 |
++--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.003 sec)
+
+MariaDB [ONTZIAK]> CREATE TABLE ONTZIA(IDENT INT NOT NULL, JABEA VARCHAR(10), ONTZIMOTAKODEA INT, PORTIZENA VARCHAR(10), HERRIIZENA VARCHAR(10), PRIMARY KEY (IDENT), FOREIGN KEY (ONTZIMOTAKODEA) REFERENCES ONTZIMOTA(KODEA),FOREIGN KEY (HERRIIZENA, PORTIZENA) REFERENCES PORTUA(HERRIIZENA, PORTIZENA));
+Query OK, 0 rows affected (0.053 sec)
+
+MariaDB [ONTZIAK]> CREATE TABLE MUGIMENDUA(ONTZIIDENT INT NOT NULL, DATA DATE NOT NULL, ORDUA VARCHAR(5) NOT NULL, LATITUDEA VARCHAR(10), LONGITUDEA VARCHAR(10), PRIMARY KEY(ONTZIIDENT,DATA,ORDUA));
+Query OK, 0 rows affected (0.032 sec)
+
+MariaDB [ONTZIAK]> DROP TABLE MUGIMENDUA;
+Query OK, 0 rows affected (0.081 sec)
+
+MariaDB [ONTZIAK]> CREATE TABLE MUGIMENDUA(ONTZIIDENT INT NOT NULL, DATA DATE NOT NULL, ORDUA VARCHAR(5) NOT NULL, LATITUDEA VARCHAR(10), LONGITUDEA VARCHAR(10), PRIMARY KEY(ONTZIIDENT,DATA,ORDUA),FOREIGN KEY (ONTZIIDENT) REFERENCES ONTZIA(IDENT));
+Query OK, 0 rows affected (0.040 sec)
+
+MariaDB [ONTZIAK]> SHOW TABLES;
++-------------------+
+| Tables_in_ontziak |
++-------------------+
+| herrialdea        |
+| itsasoa           |
+| mugimendua        |
+| ontzia            |
+| ontzimota         |
+| portua            |
++-------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [ONTZIAK]> CREATE TABLE BISITATU(ONTZIIDENT INT NOT NULL, PORTIZENA VARCHAR(10) NOT NULL, HERRIIZENA VARCHAR(10) NOT NULL, SARTU TIME NOT NULL, IRTEN DATE, PRIMARY KEY(ONTZIIDENT,PORTIZENA,HERRIIZENA,SARTU), FOREIGN KEY (ONTZIIDENT) REFERENCES ONTZIA(IDENT),FOREIGN KEY (HERRIIZENA,PORTIZENA) REFERENCES PORTUA(HERRIIZENA,PORTIZENA));
+Query OK, 0 rows affected (0.053 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO ONTZIMOTA VALUES (1,1000,"DIAMANTE");
+Query OK, 1 row affected (0.005 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO ONTZIMOTA VALUES (2,1000,"DROGA");
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [ONTZIAK]> SELECT * FROM ONTZIMOTA
+    -> ;
++-------+-------+-----------+
+| KODEA | TONAK | MATERIALA |
++-------+-------+-----------+
+|     1 |  1000 | DIAMANTE  |
+|     2 |  1000 | DROGA     |
++-------+-------+-----------+
+2 rows in set (0.000 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO ITSASOA VALUES ("BAREA",1000);
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO ITSASOA VALUES ("ATLANTIKOA",1010);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO HERRIALDEA VALUES ("ALEMANIA","EUROPA");
+Query OK, 1 row affected (0.006 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO HERRIALDEA VALUES ("TXINA","ASIA");
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO PORTUA VALUES ("TXINA","HONG KONG","","BAREA");
+Query OK, 1 row affected (0.006 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO PORTUA VALUES ("ALEMANIA","HAMBURGO","","ATLANTIKOA");
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO ONTZIA VALUES (1,"ADEI",2,"HONG KONG","TXINA");
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO ONTZIA VALUES (2,"ANDER",1,"HAMBURGO","ALEMANIA");
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO MUGIMENDUA VALUES (1,CURRENT_DATE,"18:40","10","30");
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO MUGIMENDUA VALUES (2,CURRENT_DATE,"18:41","-10","40");
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO BISITATU VALUES (1,"HAMBURGO","ALEMANIA",CURRENT_TIME,CURRENT_TIME);
+Query OK, 1 row affected, 1 warning (0.004 sec)
+
+MariaDB [ONTZIAK]> INSERT INTO BISITATU VALUES (2,"HONG KONG","TXINA",CURRENT_TIME,CURRENT_TIME);
+Query OK, 1 row affected, 1 warning (0.002 sec)
+
+MariaDB [ONTZIAK]> SELECT * FROM BISITATU;
++------------+-----------+------------+----------+------------+
+| ONTZIIDENT | PORTIZENA | HERRIIZENA | SARTU    | IRTEN      |
++------------+-----------+------------+----------+------------+
+|          1 | HAMBURGO  | ALEMANIA   | 18:43:53 | 2020-02-10 |
+|          2 | HONG KONG | TXINA      | 18:44:09 | 2020-02-10 |
++------------+-----------+------------+----------+------------+
+2 rows in set (0.000 sec)

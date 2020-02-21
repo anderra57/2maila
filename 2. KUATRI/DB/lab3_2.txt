@@ -1,0 +1,226 @@
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| ontziak            |
+| performance_schema |
+| phpmyadmin         |
+| test               |
+| unibertsitatea     |
++--------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [(none)]> SOURCE C:\XAMPP\FILES\ENPRESA.SQL
+Query OK, 0 rows affected (0.002 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.001 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 1 row affected (0.003 sec)
+
+Database changed
+Query OK, 0 rows affected (0.047 sec)
+
+Query OK, 7 rows affected (0.004 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.048 sec)
+
+Query OK, 16 rows affected (0.004 sec)
+Records: 16  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.052 sec)
+
+Query OK, 8 rows affected (0.004 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.055 sec)
+
+Query OK, 6 rows affected (0.004 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.044 sec)
+
+Query OK, 3 rows affected (0.003 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.047 sec)
+
+Query OK, 5 rows affected (0.005 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.113 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.131 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.123 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.149 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.101 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.148 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 7 rows affected (0.123 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 16 rows affected (0.098 sec)
+Records: 16  Duplicates: 0  Warnings: 0
+
+Query OK, 8 rows affected (0.108 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+Query OK, 6 rows affected (0.103 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 5 rows affected (0.097 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.001 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [enpresa]> SHOW TABLES;
++-------------------+
+| Tables_in_enpresa |
++-------------------+
+| familiartekoa     |
+| lanegitendu       |
+| langilea          |
+| proiektua         |
+| saila             |
+| sailen_tokiak     |
++-------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [enpresa]> SELECT izena,abizena,pzenb FROM langilea JOIN lanegitendu ON GSZ=LGSZ WHERE month(jaiotzedata) = 9;
++----------+---------+-------+
+| izena    | abizena | pzenb |
++----------+---------+-------+
+| Julen    | Perez   |     1 |
+| Julen    | Perez   |     2 |
+| Fernando | Olaetxe |     3 |
++----------+---------+-------+
+3 rows in set (0.009 sec)
+
+MariaDB [enpresa]> DESCRIBE familiartekoa;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| LGSZ        | char(9)     | NO   | PRI | NULL    |       |
+| Fizena      | varchar(20) | NO   | PRI | NULL    |       |
+| Sexua       | char(1)     | YES  |     | NULL    |       |
+| JaiotzeData | date        | YES  |     | NULL    |       |
+| Ahaidetasun | varchar(20) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+5 rows in set (0.032 sec)
+
+MariaDB [enpresa]> DESCRIBE lanegitendu;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| Pzenb  | int(11)      | NO   | PRI | NULL    |       |
+| LGSZ   | char(9)      | NO   | PRI | NULL    |       |
+| Orduak | decimal(3,1) | NO   |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
+3 rows in set (0.031 sec)
+
+MariaDB [enpresa]> DESCRIBE langilea;
++-------------+---------------+------+-----+---------+-------+
+| Field       | Type          | Null | Key | Default | Extra |
++-------------+---------------+------+-----+---------+-------+
+| GSZ         | char(9)       | NO   | PRI | NULL    |       |
+| Izena       | varchar(20)   | NO   |     | NULL    |       |
+| Abizena     | varchar(20)   | NO   |     | NULL    |       |
+| JaiotzeData | date          | YES  |     | NULL    |       |
+| Helbidea    | varchar(30)   | YES  |     | NULL    |       |
+| Sexua       | char(1)       | YES  |     | NULL    |       |
+| Soldata     | decimal(10,2) | YES  |     | NULL    |       |
+| GainbeGSZ   | char(9)       | YES  | MUL | NULL    |       |
+| SZ          | int(11)       | NO   | MUL | NULL    |       |
++-------------+---------------+------+-----+---------+-------+
+9 rows in set (0.029 sec)
+
+MariaDB [enpresa]> DESCRIBE proiektua;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| Pzenbakia | int(11)     | NO   | PRI | NULL    |       |
+| Pizena    | varchar(15) | NO   | UNI | NULL    |       |
+| Ptokia    | varchar(15) | YES  |     | NULL    |       |
+| Szenbakia | int(11)     | NO   | MUL | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.028 sec)
+
+MariaDB [enpresa]> DESCRIBE saila;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| Sizena      | varchar(15) | NO   | UNI | NULL    |       |
+| Szenbakia   | int(11)     | NO   | PRI | NULL    |       |
+| BuruGSZ     | char(9)     | NO   |     | NULL    |       |
+| BuruHasData | date        | NO   |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+4 rows in set (0.033 sec)
+
+MariaDB [enpresa]> DESCRIBE sailen_tokiak;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| SailZbkia | int(11)     | NO   | PRI | NULL    |       |
+| Stokia    | varchar(15) | NO   | PRI | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+2 rows in set (0.034 sec)
+
+MariaDB [enpresa]> SELECT izena,abizena,langilea.jaiotzedata,fizena,familiartekoa.jaiotzedata FROM langilea JOIN familiartekoa ON GSZ=LGSZ WHERE langilea.sexua=familiartekoa.sexua;
++-------+---------+-------------+--------+-------------+
+| izena | abizena | jaiotzedata | fizena | jaiotzedata |
++-------+---------+-------------+--------+-------------+
+| Julen | Perez   | 1965-09-01  | Mikel  | 1988-01-04  |
+| Aitor | Campos  | 1955-12-08  | Telmo  | 1983-10-25  |
++-------+---------+-------------+--------+-------------+
+2 rows in set (0.001 sec)
+
+MariaDB [enpresa]> SELECT pizena FROM proiektua JOIN langilea ON sz=szenbakia WHERE ptokia <> "Gasteiz" AND pizena LIKE "%a" AND izena="Ainara" AND abizena="Olaetxe";
++------------+
+| pizena     |
++------------+
+| Xproiektua |
+| Zproiektua |
++------------+
+2 rows in set (0.001 sec)
+
+MariaDB [enpresa]> SELECT langilea.*, pizena, orduak FROM (langilea JOIN lanegitendu ON GSZ=LGSZ) JOIN proiektua on pzenb=pzenbakia WHERE sexua='e' OR helbidea LIKE "%Donostia%";
++-----------+--------+------------+-------------+------------------------+-------+----------+-----------+----+---------------+--------+
+| GSZ       | Izena  | Abizena    | JaiotzeData | Helbidea               | Sexua | Soldata  | GainbeGSZ | SZ | pizena        | orduak |
++-----------+--------+------------+-------------+------------------------+-------+----------+-----------+----+---------------+--------+
+| 333445555 | Aitor  | Campos     | 1955-12-08  | Ibaieta 9, Donostia    | G     | 40000.00 | 888665555 |  5 | Antolakuntza  |   10.0 |
+| 888665555 | Eneko  | Otxoa      | 1937-11-10  | Las Penas, 1, Donostia | G     | 55000.00 | NULL      |  1 | Antolakuntza  |    0.0 |
+| 987654321 | Jaione | Salaberria | 1941-06-20  | Aranberri 89, Bilbo    | E     | 43000.00 | 333445555 |  3 | Antolakuntza  |   15.0 |
+| 987654321 | Jaione | Salaberria | 1941-06-20  | Aranberri 89, Bilbo    | E     | 43000.00 | 333445555 |  3 | Komunikazioak |   20.0 |
+| 999887777 | Alizia | Iriarte    | 1968-05-12  | Gran Via, 38, Bilbo    | E     | 25000.00 | 987654321 |  3 | Komunikazioak |   30.0 |
+| 333445555 | Aitor  | Campos     | 1955-12-08  | Ibaieta 9, Donostia    | G     | 40000.00 | 888665555 |  5 | Konputazioa   |   10.0 |
+| 999887777 | Alizia | Iriarte    | 1968-05-12  | Gran Via, 38, Bilbo    | E     | 25000.00 | 987654321 |  3 | Konputazioa   |   10.0 |
+| 453453453 | Ainara | Olaetxe    | 1972-07-31  | Antonegi 6, Tolosa     | E     | 25000.00 | 333445555 |  5 | Xproiektua    |   20.0 |
+| 333445555 | Aitor  | Campos     | 1955-12-08  | Ibaieta 9, Donostia    | G     | 40000.00 | 888665555 |  5 | Yproiektua    |   10.0 |
+| 453453453 | Ainara | Olaetxe    | 1972-07-31  | Antonegi 6, Tolosa     | E     | 25000.00 | 333445555 |  5 | Yproiektua    |   20.0 |
+| 333445555 | Aitor  | Campos     | 1955-12-08  | Ibaieta 9, Donostia    | G     | 40000.00 | 888665555 |  5 | Zproiektua    |   10.0 |
++-----------+--------+------------+-------------+------------------------+-------+----------+-----------+----+---------------+--------+
+11 rows in set (0.001 sec)

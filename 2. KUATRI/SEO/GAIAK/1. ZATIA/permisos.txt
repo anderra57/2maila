@@ -1,0 +1,30 @@
+chmod u+w,g+w,o+w [file name]
+chmod a+w
+
+r read
+w write
+x execute
+
+u user
+g group
+o others
+
+a all
+
++ gehitu
+- kendu
+
+ u  g  o 
+rwxrwxrwx
+111100000
+ 7  4  0
+
+chmod [zenbakia zortzitarrean] [file name]
+
+umask [file name]	//file name aukerakoa: con>fitxategi, sin>carpeta
+ -> 022
+
+ 0  2  2
+000010010 //MASKARA DA, 0->letra, 1->-
+rwxr-xr-x //KARPETA
+rw-r--r-- //FITXATEGIA, exekuzioa izkutatu
