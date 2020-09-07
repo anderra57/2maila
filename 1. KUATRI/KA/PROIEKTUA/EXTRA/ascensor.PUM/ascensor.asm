@@ -1,0 +1,76 @@
+INICIO:
+
+
+
+Display0:
+	SETB P0.0
+	SETB P0.1
+	SETB P0.2
+	SETB P0.3
+	SETB P0.4
+	SETB P0.5
+	CLR P0.6	
+	;tiene que volver
+Display1:
+	CLR P0.0
+	SETB P0.1
+	SETB P0.2
+	CLR P0.3
+	CLR P0.4
+	CLR P0.5
+	CLR P0.6
+
+Display2:
+	SETB P0.0
+	SETB P0.1
+	CLR P0.2
+	SETB P0.3
+	SETB P0.4
+	CLR P0.5
+	SETB P0.6
+
+DisplaySobrepeso:
+	SETB P0.0
+	CLR P0.1
+	SETB P0.2
+	SETB P0.3
+	CLR P0.4
+	SETB P0.5
+	SETB P0.6
+	CLR P3.0
+	CLR P3.1
+	CLR P3.2
+	CLR P3.3
+	CLR P3.4
+	CLR P3.5
+
+DisplayParado:
+	CLR P3.0
+	CLR P3.1
+	SETB P3.2
+	SETB P3.3
+	CLR P3.4
+	CLR P3.5
+
+DisplaySubir:
+	SETB P3.0
+	SETB P3.1
+	SETB P3.2
+	CLR P3.3
+	CLR P3.4
+	CLR P3.5
+
+DisplayBajar:
+	CLR P3.0
+	CLR P3.1
+	CLR P3.2
+	SETB P3.3
+	SETB P3.4
+	SETB P3.5
+
+
+
+
+
+
+END

@@ -1,0 +1,6 @@
+Duro;Ruiz De Bergara;Arkaitz;123456789;arkaitz.duro@unmail.com
+Mariel;Mendiguren;Alex;159753264;alex.mariel@algunmail.com
+Gomez;Perez;Francisco;456789321;paco.gomez@mail.com
+Bilbao;De la ria;Marta;458963217;marta.bilbao@mail.com
+Espino;Gomez;David;758963214;david.espino@otromail.com
+Duro;Ruiz;David;885666231;david.duro@otromail.com

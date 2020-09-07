@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  INVERSO                                                              10/09/2019 18:59:41 PAGE     1
+
+
+MACRO ASSEMBLER A51 V6.14
+OBJECT MODULE PLACED IN .\Inverso.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE .\Inverso.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0x00
+0000 801E              2     SJMP INICIO
+0020                   3     ORG 0x20
+                       4     
+0020                   5     INICIO:
+0020 C2D3              6     CLR RS0
+0022 C2D4              7     CLR RS1
+0024 787C              8     MOV R0, #7CH
+0026 7655              9     MOV @R0, #55H
+0028 C2D4             10     CLR RS1
+002A D2D3             11     SETB RS0
+002C 787D             12     MOV R0, #7DH
+002E 76AA             13     MOV @R0, #0AAH
+0030 D2D4             14     SETB RS1
+0032 C2D3             15     CLR RS0
+0034 787E             16     MOV R0, #7EH
+0036 761F             17     MOV @R0, #1FH
+0038 D2D4             18     SETB RS1
+003A D2D3             19     SETB RS0
+003C 787F             20     MOV R0, #7FH
+003E 76F1             21     MOV @R0, #0F1H
+                      22     END
+A51 MACRO ASSEMBLER  INVERSO                                                              10/09/2019 18:59:41 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+INICIO . . . . . .  C ADDR   0020H   A   
+RS0. . . . . . . .  B ADDR   00D0H.3 A   
+RS1. . . . . . . .  B ADDR   00D0H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

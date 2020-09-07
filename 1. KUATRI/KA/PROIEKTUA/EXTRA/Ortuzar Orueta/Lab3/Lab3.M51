@@ -1,0 +1,54 @@
+BL51 BANKED LINKER/LOCATER V4.14                                                        10/09/2019  18:59:41  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V4.14, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE Inverso.obj TO Lab3 RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Inverso.obj (INVERSO)
+
+
+LINK MAP OF MODULE:  Lab3 (INVERSO)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0040H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Lab3 (INVERSO)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        INVERSO
+  C:0020H         SYMBOL        INICIO
+  B:00D0H.3       SYMBOL        RS0
+  B:00D0H.4       SYMBOL        RS1
+  C:0000H         LINE#         2
+  C:0020H         LINE#         6
+  C:0022H         LINE#         7
+  C:0024H         LINE#         8
+  C:0026H         LINE#         9
+  C:0028H         LINE#         10
+  C:002AH         LINE#         11
+  C:002CH         LINE#         12
+  C:002EH         LINE#         13
+  C:0030H         LINE#         14
+  C:0032H         LINE#         15
+  C:0034H         LINE#         16
+  C:0036H         LINE#         17
+  C:0038H         LINE#         18
+  C:003AH         LINE#         19
+  C:003CH         LINE#         20
+  C:003EH         LINE#         21
+  -------         ENDMOD        INVERSO
+
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

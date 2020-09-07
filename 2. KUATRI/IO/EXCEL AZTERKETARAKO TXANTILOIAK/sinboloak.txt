@@ -1,0 +1,5 @@
+SIMBOLOS:
+
+lambda: λ
+mu: μ
+ro: ρ

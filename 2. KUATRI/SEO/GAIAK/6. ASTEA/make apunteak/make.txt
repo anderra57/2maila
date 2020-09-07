@@ -1,0 +1,95 @@
+
+Índice de contenido
+
+------------------------------------------------------------
+0) Compiladores
+
+Lo de arriba es el pipeline de compilación, notar que hay productos que se obtienen de “materia prima” y otros productos.
+Celeste=escrito por el usuario (.c, .h, en C)
+Blanco=generado por el usuario (.o, ejecutable, en C)
+Rojo=obtenido de afuera (.a, en C)
+Verde=procesos transformadores (gcc, en C)
+Lo anterior puede ser una cadena larga, complicada, y ancha, con algunos productos usados múltiples veces (por ej un .h)
+
+------------------------------------------------------------
+1) make
+
+Lo anterior se vuelve complicado para proyectos no triviales.
+El pipeline con make:
+Ahora hay que escribir además el “Makefile” que es el input de make. Las flechas rojas indican control. El resto del pipeline se construye a partir de la información en el Makefile.
+La filosofía de make: uno no describe el pipeline, describe dependencias, y el pipeline lo construye make.
+
+------------------------------------------------------------
+2) Dependencias
+
+Un ejemplo básico.
+[Explicar el grafo de arriba rápidamente]
+En el Makefile uno tiene la descripción del grafo de arriba. Después se pueden correr comandos como “make prog.zip” (hace todo), “make manual.pdf” (hace solo el manual), o “make programa” (hace solo el ejecutable).
+Contar que se regenera solo lo que hace falta, por ejemplo “make prog.zip, editar modulo.c, make programa” va a recompilar solo módulo.o y programa.
+Notar que los .h no dependen de los .c, sino los .o de los .c y los .h (es dependencia de generación, el .c no se genera)
+
+------------------------------------------------------------
+3) Estructura
+
+[Explicar que significa]
+
+------------------------------------------------------------
+4) Ejemplo 1 (a)
+
+Esto es un fragmento del grafo anterior en notación Makefile.
+
+------------------------------------------------------------
+5) Sustituciones
+
+Mostrar donde se pueden hacer sustituciones.
+
+------------------------------------------------------------
+6) Ejemplo 1
+
+Esta es la misma diapositiva que antes, mostrar donde se pueden hacer sustituciones (para pasar a la diapositiva siguiente).
+
+------------------------------------------------------------
+7) Ejemplo 2
+
+Ahora que están hechas las sustituciones, mostrar que aún hay repetición, que se puede eliminar con variables.
+
+------------------------------------------------------------
+8) Ejemplo 3
+
+Mostrar que ahora es más fácil cambiar de compilador de C o de opciones de compilación.
+Los nombres de variables usados en este ejemplo son convencionales, conviene seguirlos.
+Notese que la regla para un .o es siempre igual, excepto por el comando. Una regla en 2 (una con comando y dependencias, las otras solo con dependencias).
+
+------------------------------------------------------------
+9) Reglas genericas
+
+Aquí tenemos una regla genérica (el % se sustituye por lo que haga falta), y partidas en dos las dependencias. Notar que todos los .o comparten la regla genérica, pero tienen las dependencias separadas.
+
+------------------------------------------------------------
+10) Reglas implicitas
+
+Make trae algunas reglas predeterminadas (implícitas). La anterior era un ejemplo de ello, por eso podemos sacarla. Fijense que para usarlas tenemos que apegarnos a los nombres convencionales de variables.
+
+------------------------------------------------------------
+11) dependencias automáticas
+
+Mantener las dependencias a mano es tedioso. Por suerte, gcc, con los parámetros -MM nos permite generarla automáticamente, lista para insertarla en el Makefile. Para no tener que copiarla cada vez, la ponemos en un archivo aparte que se puede incluir desde el Makefile.
+
+------------------------------------------------------------
+12) Inclusión automática
+
+Los archivos que se incluyen, pueden a su vez tener dependencias; make sabe manejar bien ese caso: hace una pasada generando sus archivos incluidos, y otra generando lo que se le pidió, con esto no hace falta generar a mano las dependencias.
+El – antes de include es para que make no se queje en la primer pasada, cuando no encuentre el archivo a incluir.
+
+------------------------------------------------------------
+13) Esquema general(1)
+
+Este esquema sirve casi para cualquier programa ejecutable en C. Lo único que hay que cambiar son los valores de las variables arriba, y el nombre del ejecutable.
+
+------------------------------------------------------------
+14) Esquema general(2)
+
+Ahora sólo hay que cambiar variables. Agregamos el target all, para llamar siempre de la misma forma a make (make all) para generar el ejecutable no importa como se llame. Además al invocar make como “make” sin parámetros, genera la primer regla, así que ponemos “all” arriba.
+Agregamos una regla “clean” para borrar lo generado y empezar de cero.
+
+------------------------------------------------------------

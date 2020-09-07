@@ -1,0 +1,121 @@
+
+
+17:32
+
+sudo python PycharmProjects/scapy_web_bezeroa/scapy_http_bezeroa.py
+
+OSCAR CASQUERO OYARZABAL
+OSCAR CASQUERO OYARZABAL
+
+17:45
+
+kso-scapy.appspot.com
+
+########################################################################### 18:09
+
+# IP goiburua definitu
+ip = IP(dst="kso-scapy.appspot.com")
+
+# SYN paketea: TCP goiburua definitu
+syn = TCP(sport=RandNum(1024,65535), dport=80, flags="S", seq=0)
+
+# SYN paketea bidali eta SYN,ACK paketea jaso
+SYN_ACK = srp1(Ether()/ip/syn) # bueltan pakete bat espero da, horregaitik srp1() erabiltzen da
+
+# TCP handshake-a amaitu: ACK paketearen goiburua definitu
+ack = TCP(sport=SYN_ACK.dport, dport=SYN_ACK.sport, flags="A", seq=SYN_ACK.ack, ack=SYN_ACK.seq+1) 
+
+# ACK paketea bidali 
+sendp(Ether()/ip/ack) # bueltan ez da ezer espero, horregaitik sendp() erabiltzen da
+
+########################################################################### 18:15
+
+sudo tcpdump -i ens33 host kso-scapy.appspot.com and port 80
+
+########################################################################### 18:16
+
+########################
+
+########################################################################### 18:16
+
+sudo tcpdump -i ens33 host kso-scapy.appspot.com and port 80
+
+########################################################################### 18:16
+
+tcpdump  --> komandoa
+
+########################################################################### 18:16
+
+-i --> input
+
+18:16
+
+-i ens33
+
+18:17
+
+host --> IP helbidea (jatorrizkoa edo helburua)
+
+18:18
+
+host kso-scapy.appspot.com
+
+18:18
+
+port --> TCP portua (jatorrizkoa edo helburua)
+
+18:18
+
+port 80
+
+18:38
+
+############################
+
+########################################################################### 18:38
+
+sudo iptables -A OUTPUT -p tcp --tcp-flags RST RST -s XXXXX -j DROP
+
+########################################################################### 18:39
+
+iptables
+
+18:40
+
+-A OUTPUT
+
+18:40
+
+-p --> protocol
+
+18:40
+
+-p tcp
+
+18:42
+
+-tcp-flags RST RST
+
+18:43
+
+-s 192.168.5.16
+
+18:43
+
+-j DROP
+
+
+########################################################################### 18:57
+
+# HTTP eskaera: HTTP goiburua definitu
+http_req = "GET / HTTP/1.1\r\n" \
+           + "Host: kso-scapy.appspot.com\r\n\r\n"
+
+# HTTP eskaera: TCP goiburua: PSH,ACK
+psh_ack= TCP(sport=SYN_ACK.dport, dport=SYN_ACK.sport, 
+             flags="PA", seq=SYN_ACK.ack, ack=SYN_ACK.seq+1)
+
+# HTTP eskaera: paketea bidali eta berrespena jaso
+ACK = srp1(Ether()/ip/psh_ack/http_req)
+
+########################################################################### 

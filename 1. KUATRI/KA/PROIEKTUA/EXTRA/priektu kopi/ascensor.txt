@@ -1,0 +1,147 @@
+ORG 0x00
+SJMP INICIO
+ORG 0x20
+
+INICIO:
+
+MOV C,0xA8.6
+JC GenerarSobrepeso
+
+GenerarSobrepeso:
+	;mirar que este parado con a8.6		
+	ANL 0xC5,#1FH
+	MOV A,0xC6
+	SUBB A,0xCC
+	ANL A,#80
+	CJNE A,#00,Sobrepeso
+
+
+	
+MOV C,P2.0
+ANL C,P1.2
+JC CeroYCero
+	
+MOV C,P2.4
+ANL C,P1.4
+JC DosYDos
+	
+CeroYCero:
+	SJMP Abrir
+	SETB P1.2
+	RET
+
+DosYDos:
+	SJMP Abrir
+	SETB P1.4
+	RET
+Abrir:
+	CLR P1.1
+	SETB P1.0	
+	SETB P0.7
+	RET
+
+Cerrar:
+	CLR P1.0
+	SETB P1.1
+	CLR P0.7
+	RET
+
+Display0:
+	SETB P0.0
+	SETB P0.1
+	SETB P0.2
+	SETB P0.3
+	SETB P0.4
+	SETB P0.5
+	CLR P0.6	
+	RET
+Display1:
+	CLR P0.0
+	SETB P0.1
+	SETB P0.2
+	CLR P0.3
+	CLR P0.4
+	CLR P0.5
+	CLR P0.6
+	RET
+
+Display2:
+	SETB P0.0
+	SETB P0.1
+	CLR P0.2
+	SETB P0.3
+	SETB P0.4
+	CLR P0.5
+	SETB P0.6
+	RET
+
+Sobrepeso:
+	SJMP DisplaySobrepeso
+	SJMP Abrir
+	SobrepesoLoop:
+		MOV A,0xC6
+		SUBB A,0xCC
+		ANL A,#80
+		CJNE A,#00,SobrepesoLoop
+	RET
+
+DisplaySobrepeso:
+	SETB P0.0
+	CLR P0.1
+	SETB P0.2
+	SETB P0.3
+	CLR P0.4
+	SETB P0.5
+	SETB P0.6
+	CLR P3.0
+	CLR P3.1
+	CLR P3.2
+	CLR P3.3
+	CLR P3.4
+	CLR P3.5
+	RET
+
+DisplayParado:
+	CLR P3.0
+	CLR P3.1
+	SETB P3.2
+	SETB P3.3
+	CLR P3.4
+	CLR P3.5
+	RET
+
+DisplaySubir:
+	SETB P3.0
+	SETB P3.1
+	SETB P3.2
+	CLR P3.3
+	CLR P3.4
+	CLR P3.5
+	RET
+
+DisplayBajar:
+	CLR P3.0
+	CLR P3.1
+	CLR P3.2
+	SETB P3.3
+	SETB P3.4
+	SETB P3.5
+	RET
+
+
+
+
+
+Acelerar:
+
+
+
+
+
+Decelerar:
+
+
+
+
+
+END

@@ -1,0 +1,1488 @@
+<html xml:lang="eu" dir="ltr" class="yui3-js-enabled" lang="eu"><head><script type="text/javascript" async="" src="2018%20partziala%20-%20testa_files/analytics.js"></script><script>
+                document.addEventListener('DOMContentLoaded', function(event) {
+                    let mytables = document.querySelectorAll('table');
+                    for (let i = 0; i < mytables.length; i++) {
+                        let cellpadding = mytables[i].getAttribute('cellpadding');
+                        if (cellpadding != null) {
+                            let tr = mytables[i].getElementsByTagName('tr');
+                            let td = mytables[i].getElementsByTagName('td');
+                            for (let j = 0; j < tr.length; j++) {
+                                tr[j].style.padding = cellpadding + 'px';
+                            }
+                            for (let j = 0; j < td.length; j++) {
+                                td[j].style.padding = cellpadding + 'px';
+                            }
+                        }
+                    }
+                });
+            </script>  
+
+
+
+    <title>2018 partziala - testa</title>
+    <link rel="shortcut icon" href="https://egela.ehu.eus/pluginfile.php/1/theme_ehu/favicon/1588832984/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, 2018 partziala - testa">
+<link rel="stylesheet" type="text/css" href="2018%20partziala%20-%20testa_files/yui_combo_002.css"><script charset="utf-8" id="yui_3_17_2_1_1588859592262_8" src="2018%20partziala%20-%20testa_files/yui_combo_002.php" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1588859592262_18" href="2018%20partziala%20-%20testa_files/yui_combo.css"><script charset="utf-8" id="yui_3_17_2_1_1588859592262_19" src="2018%20partziala%20-%20testa_files/yui_combo_004.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1588859592262_27" src="2018%20partziala%20-%20testa_files/flags.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1588859592262_245" src="2018%20partziala%20-%20testa_files/qengine.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1588859592262_246" src="2018%20partziala%20-%20testa_files/module.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1588859592262_247" src="2018%20partziala%20-%20testa_files/yui_combo.php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="2018%20partziala%20-%20testa_files/all.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/egela.ehu.eus","sesskey":"gjAEFKcDPR","themerev":"1588832984","slasharguments":1,"theme":"ehu","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1583410400","admin":"admin","svgicons":true,"usertimezone":"Europa\/Madril","contextid":3407008};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/egela.ehu.eus\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/egela.ehu.eus\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/egela.ehu.eus\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/egela.ehu.eus\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/egela.ehu.eus\/theme\/yui_combo.php?m\/1583410400\/","combine":true,"comboBase":"https:\/\/egela.ehu.eus\/theme\/yui_combo.php?","ext":false,"root":"m\/1583410400\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_offlinequiz-offlinequizbase":{"requires":["base","node"]},"moodle-mod_offlinequiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_offlinequiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_offlinequiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_offlinequiz-util","querystring-parse"]},"moodle-mod_offlinequiz-util":{"requires":["node"],"use":["moodle-mod_offlinequiz-util-base"],"submodules":{"moodle-mod_offlinequiz-util-base":{},"moodle-mod_offlinequiz-util-slot":{"requires":["node","moodle-mod_offlinequiz-util-base"]},"moodle-mod_offlinequiz-util-page":{"requires":["node","moodle-mod_offlinequiz-util-base"]}}},"moodle-mod_offlinequiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_offlinequiz-offlinequizbase","moodle-mod_offlinequiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_offlinequiz-offlinequizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_offlinequiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_offlinequiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_offlinequiz-offlinequizbase","moodle-mod_offlinequiz-util-base","moodle-mod_offlinequiz-util-page","moodle-mod_offlinequiz-util-slot","moodle-course-util"]},"moodle-mod_offlinequiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/egela.ehu.eus\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/egela.ehu.eus\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1583410400\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/egela.ehu.eus\/lib\/javascript.php\/1583410400\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/egela.ehu.eus\/lib\/javascript.php\/1583410400\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/egela.ehu.eus\/lib\/javascript.php\/1583410400\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/egela.ehu.eus\/lib\/javascript.php\/1583410400\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/egela.ehu.eus\/lib\/javascript.php\/1583410400\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="description" content="Gradu, Master Ofizial, Berezko Titulu eta Doktoregorako irakasgaientzako plataforma.">
+<meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="2018%20partziala%20-%20testa_files/first.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="2018%20partziala%20-%20testa_files/jquery-3.js"></script></head>
+<body id="page-mod-quiz-review" class="format-topics  path-mod path-mod-quiz gecko dir-ltr lang-eu yui-skin-sam yui3-skin-sam egela-ehu-eus pagelayout-incourse course-21097 context-3407008 cmid-2792914 category-1542  jsenabled">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Joan eduki nagusira zuzenean</a>
+</div><script type="text/javascript" src="2018%20partziala%20-%20testa_files/yui_combo_003.php"></script><script type="text/javascript" src="2018%20partziala%20-%20testa_files/jquery-3_002.js"></script>
+<script type="text/javascript" src="2018%20partziala%20-%20testa_files/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar   navbar-expand moodle-has-zindex">
+            <div data-region="drawer-toggle" class="d-inline-block mr-3">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true" aria-label=""></i><span class="sr-only">Alboko panela</span></button>
+            </div>
+            <a href="https://egela.ehu.eus/" class="navbar-brand has-logo
+                    ">
+                    <span class="logo d-none d-sm-inline">
+                        <img src="2018%20partziala%20-%20testa_files/logoEGELA.png" alt="egela 2019-20">
+                    </span>
+    
+            </a>
+            
+            <!-- course_controls -->
+            <div class="coursecontrols nav-item d-flex">
+                <div class="studentdash nav-item nav-link">
+        <a role="button" data-tooltip="tooltip" data-placement="bottom" title="" data-toggle="modal" href="#studentdashslider" class="btn btn-secondary fhs-tooltip" data-original-title="Ikastaroaren aginte-panela"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+    </div>
+                
+            </div>
+    
+            <ul class="navbar-nav d-md-flex">
+                <!-- custom_menu -->
+                
+                <div>
+
+    <div class="d-none d-xl-block">
+        <div class="custom_navbar">
+            <div class="custom_navbar-item">
+                        <a class="lang_menu" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=de">Deutsch</a>
+                        <a class="lang_menu" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=en">English</a>
+                        <a class="lang_menu" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=es">Español</a>
+                      <a class="nav-link-active">Euskara</a>
+                        <a class="lang_menu" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=fr">Français</a>
+                        <a class="lang_menu" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=it">Italiano</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-xl-none d-none d-md-block">
+        <li class="dropdown nav-item">
+            <a class="dropdown-toggle nav-link" id="drop-down-5eb412c91d27d5eb412c8ee5da6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                Euskara
+            </a>
+            <div class="dropdown-menu" aria-labelledby="drop-down-5eb412c91d27d5eb412c8ee5da6">
+                        <a class="dropdown-item" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=de" title="Deutsch">Deutsch</a>
+                        <a class="dropdown-item" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=en" title="English">English</a>
+                        <a class="dropdown-item" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=es" title="Español">Español</a>
+                        <a class="dropdown-item" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=eu" title="Euskara">Euskara</a>
+                        <a class="dropdown-item" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=fr" title="Français">Français</a>
+                        <a class="dropdown-item" href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=it" title="Italiano">Italiano</a>
+            </div>
+        </li>
+    </div>
+</div>
+                <!-- page_heading_menu -->
+                
+            </ul>
+    
+                <div class="d-none d-md-block">
+                  <div id="custom_menu" class="dropdown nav-item">
+    		            	<div id="ehu_divider"> | </div>
+                      <a class="dropdown-toggle nav-link" id="drop-down-5eb412c91d5fb5eb412c8ee5da10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                             Material erabilgarria 
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="drop-down-5eb412c91d5fb5eb412c8ee5da10">
+                       
+                          <a class="dropdown-item" href="https://www.ehu.eus/eu/web/ecampus/ikasgela-birtualak-ik" target="_blank"><div class="text_to_html"> Ikasleentzako material erabilgarria </div></a>
+                        
+                          <a class="dropdown-item" href="https://www.ehu.eus/eu/web/ecampus/manuales" target="_blank"><div class="text_to_html">  Irakasleentzako material erabilgarria </div></a>
+                               
+                      </div>
+                  </div>
+                </div>
+    
+            <ul class="nav navbar-nav ml-auto">
+                <div class="d-none d-lg-block">
+                
+            </div>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="56548" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5eb412c91e84c5eb412c8ee5da11" aria-haspopup="true" aria-label="Erakutsi mezuen leihoa mezurik gabe" tabindex="0">
+                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Joan mezuen menura" aria-label="Joan mezuen menura"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5eb412c91e84c5eb412c8ee5da11" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Jakinarazpenen leihoa" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Mezuak</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="https://egela.ehu.eus/message/index.php?contactsfirst=1">Mezu berria
+            </a>
+        </div>
+        <a class="mark-all-read-button" href="#" role="button" title="Markatu guztiak irakurritako gisa" data-action="mark-all-read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Markatu guztiak irakurritako gisa" aria-label="Markatu guztiak irakurritako gisa"></i></span>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " aria-hidden="true" title="Kargatzen" aria-label="Kargatzen"></i></span>
+        </a>
+        <a href="https://egela.ehu.eus/message/edit.php?id=56548" title="Mezuen hobespenak">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Mezuen hobespenak" aria-label="Mezuen hobespenak"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">Mezurik ez</div>
+
+            </div>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " aria-hidden="true" title="Kargatzen" aria-label="Kargatzen"></i></span>
+        </div>
+                <a class="see-all-link" href="https://egela.ehu.eus/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Ikusi guztiak</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="56548" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5eb412c91fda45eb412c8ee5da12" aria-haspopup="true" aria-label="Erakutsi jakinarazpen leihoa jakinarazpenik gabe" tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Joan jakinarazpenen menura" aria-label="Joan jakinarazpenen menura"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5eb412c91fda45eb412c8ee5da12" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Jakinarazpenen leihoa" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Jakinarazpenak</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="#" title="Markatu guztiak irakurritako gisa" data-action="mark-all-read" role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Markatu guztiak irakurritako gisa" aria-label="Markatu guztiak irakurritako gisa"></i></span>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " aria-hidden="true" title="Kargatzen" aria-label="Kargatzen"></i></span>
+        </a>
+        <a href="https://egela.ehu.eus/message/notificationpreferences.php?userid=56548" title="Jakinarazpenen hobespenak">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Jakinarazpenen hobespenak" aria-label="Jakinarazpenen hobespenak"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Ez duzu jakinarazpenik</div>
+
+            </div>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " aria-hidden="true" title="Kargatzen" aria-label="Kargatzen"></i></span>
+        </div>
+                <a class="see-all-link" href="https://egela.ehu.eus/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Ikusi guztiak</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-2" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-2-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" class=" dropdown-toggle" id="dropdown-2" title="" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">ANDER PRIETO LÓPEZ</span><span class="avatars"><span class="avatar current"><img src="2018%20partziala%20-%20testa_files/f2.jpg" alt="ANDER PRIETO LÓPEZ-ren irudia" title="ANDER PRIETO LÓPEZ-ren irudia" class="userpicture" role="presentation" width="35" height="35"></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-2-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-2" role="menu" data-align="tr-br">
+                                        <a href="https://egela.ehu.eus/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true" title="Aginte-panela" aria-label="Aginte-panela"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Aginte-panela
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="https://egela.ehu.eus/user/profile.php?id=56548" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profila" aria-label="Profila"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profila
+                                            </span>
+                                        </a>
+                                        <a href="https://egela.ehu.eus/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-table fa-fw " aria-hidden="true" title="Kalifikazioak" aria-label="Kalifikazioak"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Kalifikazioak
+                                            </span>
+                                        </a>
+                                        <a href="https://egela.ehu.eus/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Mezuak" aria-label="Mezuak"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Mezuak
+                                            </span>
+                                        </a>
+                                        <a href="https://egela.ehu.eus/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Aukerak" aria-label="Aukerak"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Aukerak
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="https://egela.ehu.eus/login/logout.php?sesskey=gjAEFKcDPR" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Irten" aria-label="Irten"></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Irten
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+        
+
+    <div id="page" class="container-fluid">
+
+        <div id="learningcontent">
+        
+            <div class="modal fade" id="studentdashslider" tabindex="-1" role="dialog" aria-labelledby="teacherdashslider" aria-hidden="true">
+<div class="modal-dialog" role="document">
+
+    <div class="modal-content">
+    <div class="modal-body">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+
+        <div class="studentdashboard">
+        <div class="container-fluid">
+        
+            <div class="row">
+
+                    <div class="col-md-2 studentcompletion">
+                            <p>Nire Aurrerapen-maila</p>
+                            <div class="progress-chart-container m-b-1">
+    <div class="no-progress">
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+    </div>
+</div>
+                    </div>
+
+                    <div class="col-md-2 studentgradebook">
+                        <p>Nire Kalifikazioak</p><a href="https://egela.ehu.eus/grade/report/user/index.php?id=21097" alt="Nire Kalifikazioak"><i class="fa fa-5x fa-bar-chart"></i></a>
+                    </div>
+
+                     
+                    <div class="col-md-2 studentadministration">
+                        <p>Ikastaroaren kudeaketa</p><a href="https://egela.ehu.eus/course/admin.php?courseid=21097" alt="Ikastaroaren kudeaketa"><i class="fa fa-5x fa-cog"></i></a>
+                    </div>
+                     
+                </div>
+
+            <div class="row">
+                    <div class="col-md-4 coursesummary">
+                        <div class="dashtitle">
+                            <h3><i class="fa fa-map">&nbsp;</i>Ikastaroaren deskribapena</h3>
+                        </div>
+                            <div class="card-block">
+                                    <div class="text_to_html"><br>
+Irakasgai honen helburua datu baseen oinarrizko kontzeptuak ikusteaz 
+gain, datu baseen oinarrizko diseinuak, SQL eta aplikazioen 
+bidez&nbsp;datu baseetatik datuak jasotzeada.<br></div>
+                            </div>
+                    </div>
+
+                    <div class="col-md-5 coursestafflisting">
+                        <div class="dashtitle">
+                            <h3><i class="fa fa-users">&nbsp;</i>Ikastaroko Irakasleak</h3>
+                        </div>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="staffmember">
+                                        <a href="https://egela.ehu.eus/user/view.php?id=12122&amp;course=21097"><img src="2018%20partziala%20-%20testa_files/f1.png" alt="ANA JESUS ARMENDARIZ LEUNDA-ren irudia" title="ANA JESUS ARMENDARIZ LEUNDA-ren irudia" class="userpicture defaultuserpic" width="50" height="50"></a>
+                                        <div class="staffinfo">
+                                            <h4>ANA JESUS ARMENDARIZ LEUNDA </h4>
+                                            <p><a href="mailto:anaje.armendariz@ehu.eus"><i class="fa fa-envelope-o">&nbsp;</i>Helbide elektronikoa</a> <br> <a href="https://egela.ehu.eus/message/index.php?id=12122"><i class="fa fa-comment">&nbsp;</i>Bidali mezua</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="staffmember">
+                                        <a href="https://egela.ehu.eus/user/view.php?id=49891&amp;course=21097"><img src="2018%20partziala%20-%20testa_files/f1.png" alt="GORKA LABAKA INTXAUSPE-ren irudia" title="GORKA LABAKA INTXAUSPE-ren irudia" class="userpicture defaultuserpic" width="50" height="50"></a>
+                                        <div class="staffinfo">
+                                            <h4>GORKA LABAKA INTXAUSPE </h4>
+                                            <p><a href="mailto:gorka.labaka@ehu.eus"><i class="fa fa-envelope-o">&nbsp;</i>Helbide elektronikoa</a> <br> <a href="https://egela.ehu.eus/message/index.php?id=49891"><i class="fa fa-comment">&nbsp;</i>Bidali mezua</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="staffmember">
+                                        <a href="https://egela.ehu.eus/user/view.php?id=11184&amp;course=21097"><img src="2018%20partziala%20-%20testa_files/f1.png" alt="MIKEL VILLAMAÑE GIRONES-ren irudia" title="MIKEL VILLAMAÑE GIRONES-ren irudia" class="userpicture defaultuserpic" width="50" height="50"></a>
+                                        <div class="staffinfo">
+                                            <h4>MIKEL VILLAMAÑE GIRONES </h4>
+                                            <p><a href="mailto:mikel.villamane@ehu.eus"><i class="fa fa-envelope-o">&nbsp;</i>Helbide elektronikoa</a> <br> <a href="https://egela.ehu.eus/message/index.php?id=11184"><i class="fa fa-comment">&nbsp;</i>Bidali mezua</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 activitylinks">
+                        <div class="dashtitle">
+                            <h3><i class="fa fa-check-square-o dashicon"></i>Jarduerak</h3>     
+                        </div>
+                        <div class="list-group">
+                            <div class="list-group" aria-labelledby="list-group-5eb412c92830a5eb412c8ee5da21">
+        <a href="https://egela.ehu.eus/course/resources.php?id=21097" class="list-group-item">Baliabideak</a>
+        <a href="https://egela.ehu.eus/mod/collaborate/index.php?id=21097" class="list-group-item">Collaborate instances</a>
+        <a href="https://egela.ehu.eus/mod/forum/index.php?id=21097" class="list-group-item">Foroak</a>
+        <a href="https://egela.ehu.eus/mod/quiz/index.php?id=21097" class="list-group-item">Galdetegiak</a>
+        <a href="https://egela.ehu.eus/mod/assign/index.php?id=21097" class="list-group-item">Zereginak</a>
+ </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+</div>
+
+<div style="clear:both;"></div>
+            <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="mr-auto">
+
+                        <a href="https://egela.ehu.eus/course/view.php?id=21097"><div class="page-context-header"><div class="page-header-headings"><h1>Datu-baseak</h1></div></div></a>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav role="navigation">
+    <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="https://egela.ehu.eus/">Hasiera</a></li>
+                    <li class="breadcrumb-item">Nire ikastaroak</li>
+                    <li class="breadcrumb-item"><a href="https://egela.ehu.eus/course/index.php?categoryid=1542">Graduko Ikasketak</a></li>
+                    <li class="breadcrumb-item"><a href="https://egela.ehu.eus/course/view.php?id=21097">20190_363_GIIGSI30_26020_46</a></li>
+                    <li class="breadcrumb-item"><a href="https://egela.ehu.eus/course/view.php?id=21097">Atalak</a></li>
+                    <li class="breadcrumb-item"><a href="https://egela.ehu.eus/course/view.php?id=21097#section-0">Orokorra</a></li>
+                    <li class="breadcrumb-item"><a href="https://egela.ehu.eus/mod/quiz/view.php?id=2792914">2018 partziala - testa</a></li>
+    </ul>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            
+            <div id="page-content" class="row">
+                <div id="region-main-box" class="col-12">
+                    <section id="region-main" class="has-blocks mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="notifications" id="user-notifications"></span>
+                                <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Noiz hasita</th><td class="cell">igandea, 2020(e)ko maiatzaren 3(e)an, 17:40(e)an</td></tr><tr><th class="cell" scope="row">Egoera</th><td class="cell">Amaituta</td></tr><tr><th class="cell" scope="row">Noiz osatua</th><td class="cell">igandea, 2020(e)ko maiatzaren 3(e)an, 17:59(e)an</td></tr><tr><th class="cell" scope="row">Hartutako denbora</th><td class="cell">18 minutu 56 segundo</td></tr><tr><th class="cell" scope="row">Kalifikazioa</th><td class="cell"><b>3,50</b> gehienezko 6,00-(e)tik (%<b>58</b>)</td></tr></tbody></table><form action="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914" method="post" class="questionflagsaveform" autocomplete="off" id="yui_3_17_2_1_1588859592262_255"><div><div id="q1" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">1</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_29"><input type="hidden" name="q697486:1_:flagged" value="0"><input type="hidden" value="qaid=7102882&amp;qubaid=697486&amp;qid=13651635&amp;slot=1&amp;checksum=c356403fc43f98ed1aa844fb4b0f6c79&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:1_:flaggedcheckbox" name="q697486:1_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:1_:sequencecheck" value="3"><div class="qtext"><p>Zer da transakzio bat?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:1_answer" disabled="disabled" value="0" id="q697486:1_answer0"><label for="q697486:1_answer0" class="m-l-1"><span class="answernumber">a. </span>Datu-basearen gainean burututako eragiketa segida</label> </div>
+<div class="r1"><input type="radio" name="q697486:1_answer" disabled="disabled" value="1" id="q697486:1_answer1"><label for="q697486:1_answer1" class="m-l-1"><span class="answernumber">b. </span>Segundu batean datu-basea atzitzen duten eragiketen multzoa</label> </div>
+<div class="r0"><input type="radio" name="q697486:1_answer" disabled="disabled" value="2" id="q697486:1_answer2"><label for="q697486:1_answer2" class="m-l-1"><span class="answernumber">c. </span>Datu-elementu baten tamaina</label> </div>
+<div class="r1 incorrect"><input type="radio" name="q697486:1_answer" disabled="disabled" value="3" id="q697486:1_answer3" checked="checked"><label for="q697486:1_answer3" class="m-l-1"><span class="answernumber">d. </span>DBKS-ak erabakitako eragiketa segida</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Datu-basearen gainean burututako eragiketa segida</div></div></div></div></div><div id="q2" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">2</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_38"><input type="hidden" name="q697486:2_:flagged" value="0"><input type="hidden" value="qaid=7102883&amp;qubaid=697486&amp;qid=13651639&amp;slot=2&amp;checksum=82854e82039357ca091ec72ea34b505a&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:2_:flaggedcheckbox" name="q697486:2_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:2_:sequencecheck" value="3"><div class="qtext"><p>Zer adierazten du commit batek?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q697486:2_answer" disabled="disabled" value="0" id="q697486:2_answer0" checked="checked"><label for="q697486:2_answer0" class="m-l-1"><span class="answernumber">a. </span>Transakzioa ondo amaitu dela</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:2_answer" disabled="disabled" value="1" id="q697486:2_answer1"><label for="q697486:2_answer1" class="m-l-1"><span class="answernumber">b. </span>Transakzioa egunkarian apuntatu behar dela</label> </div>
+<div class="r0"><input type="radio" name="q697486:2_answer" disabled="disabled" value="2" id="q697486:2_answer2"><label for="q697486:2_answer2" class="m-l-1"><span class="answernumber">c. </span>Transakzioa gaizki amaitu dela</label> </div>
+<div class="r1"><input type="radio" name="q697486:2_answer" disabled="disabled" value="3" id="q697486:2_answer3"><label for="q697486:2_answer3" class="m-l-1"><span class="answernumber">d. </span>Transakzioa hasteko prest dagoela</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Transakzioa ondo amaitu dela</div></div></div></div></div><div id="q3" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">3</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_47"><input type="hidden" name="q697486:3_:flagged" value="0"><input type="hidden" value="qaid=7102884&amp;qubaid=697486&amp;qid=14495983&amp;slot=3&amp;checksum=92fde5de9e3cc4ded20e4631d774a443&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:3_:flaggedcheckbox" name="q697486:3_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:3_:sequencecheck" value="3"><div class="qtext"><p>Zertarako erabiltzen da END TRANSACTION?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:3_answer" disabled="disabled" value="0" id="q697486:3_answer0"><label for="q697486:3_answer0" class="m-l-1"><span class="answernumber">a. </span>Transakzioa gaizki bukatu dela esateko</label> </div>
+<div class="r1"><input type="radio" name="q697486:3_answer" disabled="disabled" value="1" id="q697486:3_answer1"><label for="q697486:3_answer1" class="m-l-1"><span class="answernumber">b. </span>Transakzioa egunkariak apuntatzeko</label> </div>
+<div class="r0 correct"><input type="radio" name="q697486:3_answer" disabled="disabled" value="2" id="q697486:3_answer2" checked="checked"><label for="q697486:3_answer2" class="m-l-1"><span class="answernumber">c. </span>Transakzioko bukaera muga jartzeko</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:3_answer" disabled="disabled" value="3" id="q697486:3_answer3"><label for="q697486:3_answer3" class="m-l-1"><span class="answernumber">d. </span>Transakzio ondo bukatu dela adierazteko</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Transakzioko bukaera muga jartzeko</div></div></div></div></div><div id="q4" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">4</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_56"><input type="hidden" name="q697486:4_:flagged" value="0"><input type="hidden" value="qaid=7102885&amp;qubaid=697486&amp;qid=14495994&amp;slot=4&amp;checksum=9242e71e2906ce6966d51d27ca32be9c&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:4_:flaggedcheckbox" name="q697486:4_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:4_:sequencecheck" value="3"><div class="qtext"><p>Transakzioetaz ari bagara, zein esaldi dago <strong>GAIZKI</strong></p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:4_answer" disabled="disabled" value="0" id="q697486:4_answer0"><label for="q697486:4_answer0" class="m-l-1"><span class="answernumber">a. </span>Transakzioaren aldaketak ezin dira galdu hitzartu ondoren.</label> </div>
+<div class="r1"><input type="radio" name="q697486:4_answer" disabled="disabled" value="1" id="q697486:4_answer1"><label for="q697486:4_answer1" class="m-l-1"><span class="answernumber">b. </span>Transakzioen ordenaren arabera, amaierako emaitza ez da beti berbera</label> </div>
+<div class="r0 incorrect"><input type="radio" name="q697486:4_answer" disabled="disabled" value="2" id="q697486:4_answer2" checked="checked"><label for="q697486:4_answer2" class="m-l-1"><span class="answernumber">c. </span>Transakzioaren egikaritzapena zuzena bada, datu-basea egoera sendo batetik beste<br>egoera sendo batera pasatzen da.</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:4_answer" disabled="disabled" value="3" id="q697486:4_answer3"><label for="q697486:4_answer3" class="m-l-1"><span class="answernumber">d. </span>Transakzio bat partzialki exekutatzea posible da</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Transakzio bat partzialki exekutatzea posible da</div></div></div></div></div><div id="q5" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">5</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_65"><input type="hidden" name="q697486:5_:flagged" value="0"><input type="hidden" value="qaid=7102886&amp;qubaid=697486&amp;qid=13651655&amp;slot=5&amp;checksum=5196b2d44a07fe9c175a7cec011a97e4&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:5_:flaggedcheckbox" name="q697486:5_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:5_:sequencecheck" value="3"><div class="qtext"><p>Honako taula hau egiteko:</p>
+<p style="margin-left: 30px;">Txirrindularia (NAN, Dortsala, Izena, Abizena, TxTaldea)</p>
+<p>Zer falta da agindu honetan Dortsala bakarra izatea nahi badugu?</p>
+<p style="margin-left: 30px;">CREATE TABLE Txirrindularia (<br>&nbsp;&nbsp; &nbsp;NAN &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;char(9) &nbsp;&nbsp; &nbsp;not null,<br>&nbsp;&nbsp; &nbsp;Dortsala &nbsp;&nbsp; &nbsp;int&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;not null,<br>&nbsp;&nbsp; &nbsp;Izena &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;varchar(15),<br>&nbsp;&nbsp; &nbsp;Abizena&nbsp;&nbsp; &nbsp;varchar(15),<br>&nbsp;&nbsp; &nbsp;TxTaldea&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; varchar(15),<br>PRIMARY KEY (NAN),<br>____________________________________ ,<br>FOREIGN KEY(TxTaldea) REFERENCES Taldea(Izena)<br>)</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:5_answer" disabled="disabled" value="0" id="q697486:5_answer0"><label for="q697486:5_answer0" class="m-l-1"><span class="answernumber">a. </span>FOREIGN KEY (Dortsala) REFERENCES Taldea(Dortsala)</label> </div>
+<div class="r1"><input type="radio" name="q697486:5_answer" disabled="disabled" value="1" id="q697486:5_answer1"><label for="q697486:5_answer1" class="m-l-1"><span class="answernumber">b. </span>PRIMARY KEY(Dortsala)</label> </div>
+<div class="r0 correct"><input type="radio" name="q697486:5_answer" disabled="disabled" value="2" id="q697486:5_answer2" checked="checked"><label for="q697486:5_answer2" class="m-l-1"><span class="answernumber">c. </span>Gainontzeko guztiak okerrak dira</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:5_answer" disabled="disabled" value="3" id="q697486:5_answer3"><label for="q697486:5_answer3" class="m-l-1"><span class="answernumber">d. </span>HAS ONLY ONE(Dortsala)</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Gainontzeko guztiak okerrak dira</div></div></div></div></div><div id="q6" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">6</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_74"><input type="hidden" name="q697486:6_:flagged" value="0"><input type="hidden" value="qaid=7102887&amp;qubaid=697486&amp;qid=13651664&amp;slot=6&amp;checksum=f64a46294c20cbfa6e90b87848937d5c&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:6_:flaggedcheckbox" name="q697486:6_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:6_:sequencecheck" value="3"><div class="qtext"><p>Zertarako erabiltzen da ALTER TABLE?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:6_answer" disabled="disabled" value="0" id="q697486:6_answer0"><label for="q697486:6_answer0" class="m-l-1"><span class="answernumber">a. </span>ALTER TABLE ez da existitzen, UPDATE TABLE erabili behar da</label> </div>
+<div class="r1"><input type="radio" name="q697486:6_answer" disabled="disabled" value="1" id="q697486:6_answer1"><label for="q697486:6_answer1" class="m-l-1"><span class="answernumber">b. </span>Taula batean gordeta dauden datuetan aldaketak egiteko</label> </div>
+<div class="r0"><input type="radio" name="q697486:6_answer" disabled="disabled" value="2" id="q697486:6_answer2"><label for="q697486:6_answer2" class="m-l-1"><span class="answernumber">c. </span>Taula bat beste taula baten alternatiboa dela adierazteko</label> </div>
+<div class="r1 correct"><input type="radio" name="q697486:6_answer" disabled="disabled" value="3" id="q697486:6_answer3" checked="checked"><label for="q697486:6_answer3" class="m-l-1"><span class="answernumber">d. </span>Taula baten egituran aldaketak egiteko</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Taula baten egituran aldaketak egiteko</div></div></div></div></div><div id="q7" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">7</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_83"><input type="hidden" name="q697486:7_:flagged" value="0"><input type="hidden" value="qaid=7102888&amp;qubaid=697486&amp;qid=14496018&amp;slot=7&amp;checksum=c6eef5b23cc791679608fbee169fbbb3&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:7_:flaggedcheckbox" name="q697486:7_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:7_:sequencecheck" value="3"><div class="qtext"><p>Zer esan nahi du agindu honek?</p>
+<p style="margin-left: 30px;">CREATE DOMAIN GSMM AS CHAR(9) DEFAULT ‘123456789’</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:7_answer" disabled="disabled" value="0" id="q697486:7_answer0"><label for="q697486:7_answer0" class="m-l-1"><span class="answernumber">a. </span>GSMM atributua gehitzen du datu-basera 123456789 datuarekin</label> </div>
+<div class="r1 correct"><input type="radio" name="q697486:7_answer" disabled="disabled" value="1" id="q697486:7_answer1" checked="checked"><label for="q697486:7_answer1" class="m-l-1"><span class="answernumber">b. </span>GSMM datu-mota sortu da defektuz 123456789 jarriz</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r0"><input type="radio" name="q697486:7_answer" disabled="disabled" value="2" id="q697486:7_answer2"><label for="q697486:7_answer2" class="m-l-1"><span class="answernumber">c. </span>GSMM atributua sortu da defektuz 123456789 jarriz</label> </div>
+<div class="r1"><input type="radio" name="q697486:7_answer" disabled="disabled" value="3" id="q697486:7_answer3"><label for="q697486:7_answer3" class="m-l-1"><span class="answernumber">d. </span>GSMM datu-mota aldatzen du char(9) datu-motaren partez 123456789 defektuz jarriz</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: GSMM datu-mota sortu da defektuz 123456789 jarriz</div></div></div></div></div><div id="q8" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">8</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_92"><input type="hidden" name="q697486:8_:flagged" value="0"><input type="hidden" value="qaid=7102889&amp;qubaid=697486&amp;qid=14496028&amp;slot=8&amp;checksum=2d6ae08bf683eb13deb0f6f3d40094c0&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:8_:flaggedcheckbox" name="q697486:8_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:8_:sequencecheck" value="3"><div class="qtext"><p>Zertako erabiltzen da FOREIGN KEY?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q697486:8_answer" disabled="disabled" value="0" id="q697486:8_answer0" checked="checked"><label for="q697486:8_answer0" class="m-l-1"><span class="answernumber">a. </span>Gako arrotzak zeintzuk diren adierazteko</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:8_answer" disabled="disabled" value="1" id="q697486:8_answer1"><label for="q697486:8_answer1" class="m-l-1"><span class="answernumber">b. </span>Gakoa zein den adierazteko</label> </div>
+<div class="r0"><input type="radio" name="q697486:8_answer" disabled="disabled" value="2" id="q697486:8_answer2"><label for="q697486:8_answer2" class="m-l-1"><span class="answernumber">c. </span>Hautazko gakoa izan daitekeela adierazteko</label> </div>
+<div class="r1"><input type="radio" name="q697486:8_answer" disabled="disabled" value="3" id="q697486:8_answer3"><label for="q697486:8_answer3" class="m-l-1"><span class="answernumber">d. </span>Gakoa bakarra dela adierazteko</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Gako arrotzak zeintzuk diren adierazteko</div></div></div></div></div><div id="q9" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">9</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_101"><input type="hidden" name="q697486:9_:flagged" value="0"><input type="hidden" value="qaid=7102890&amp;qubaid=697486&amp;qid=14496341&amp;slot=9&amp;checksum=34bbd528101dddb3d1d7a62c90c97b0d&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:9_:flaggedcheckbox" name="q697486:9_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:9_:sequencecheck" value="3"><div class="qtext"><p>Hutsunea bete:</p>
+<p style="margin-left: 30px;">DELETE ________________ WHERE NAN = 111</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:9_answer" disabled="disabled" value="0" id="q697486:9_answer0"><label for="q697486:9_answer0" class="m-l-1"><span class="answernumber">a. </span>Database DBIzena</label> </div>
+<div class="r1"><input type="radio" name="q697486:9_answer" disabled="disabled" value="1" id="q697486:9_answer1"><label for="q697486:9_answer1" class="m-l-1"><span class="answernumber">b. </span>Taula</label> </div>
+<div class="r0 correct"><input type="radio" name="q697486:9_answer" disabled="disabled" value="2" id="q697486:9_answer2" checked="checked"><label for="q697486:9_answer2" class="m-l-1"><span class="answernumber">c. </span>FROM Taula</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:9_answer" disabled="disabled" value="3" id="q697486:9_answer3"><label for="q697486:9_answer3" class="m-l-1"><span class="answernumber">d. </span>Atributua FROM Taula</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: FROM Taula</div></div></div></div></div><div id="q10" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">10</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_110"><input type="hidden" name="q697486:10_:flagged" value="0"><input type="hidden" value="qaid=7102891&amp;qubaid=697486&amp;qid=13651653&amp;slot=10&amp;checksum=c521ce94dbf450af4b0e93dc0e5efa81&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:10_:flaggedcheckbox" name="q697486:10_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:10_:sequencecheck" value="3"><div class="qtext"><p>Zer gertatuko da hurrengo agindua erabiltzean?: DROP TABLE LANGILEA CASCADE</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:10_answer" disabled="disabled" value="0" id="q697486:10_answer0"><label for="q697486:10_answer0" class="m-l-1"><span class="answernumber">a. </span>LANGILEA taulako datu guztiak ezabatuko ditu</label> </div>
+<div class="r1 correct"><input type="radio" name="q697486:10_answer" disabled="disabled" value="1" id="q697486:10_answer1" checked="checked"><label for="q697486:10_answer1" class="m-l-1"><span class="answernumber">b. </span>LANGILEA taula ezabatuko da eta berari erreferentzia egiten dioten murriztapenak eta bistak ere</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r0"><input type="radio" name="q697486:10_answer" disabled="disabled" value="2" id="q697486:10_answer2"><label for="q697486:10_answer2" class="m-l-1"><span class="answernumber">c. </span>LANGILEA taula ezabatuko da bista batean erabiltzen ez bada</label> </div>
+<div class="r1"><input type="radio" name="q697486:10_answer" disabled="disabled" value="3" id="q697486:10_answer3"><label for="q697486:10_answer3" class="m-l-1"><span class="answernumber">d. </span>LANGILEA taula ezabatuko da beste erlazio bateko gako arrotzean erabiltzen ez bada</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: LANGILEA taula ezabatuko da eta berari erreferentzia egiten dioten murriztapenak eta bistak ere</div></div></div></div></div><div id="q11" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">11</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_119"><input type="hidden" name="q697486:11_:flagged" value="0"><input type="hidden" value="qaid=7102892&amp;qubaid=697486&amp;qid=13651683&amp;slot=11&amp;checksum=7325f7488a2ee9f67bd56a3602a70474&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:11_:flaggedcheckbox" name="q697486:11_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:11_:sequencecheck" value="3"><div class="qtext"><p>Ondo dago honako INSERT agindua,&nbsp; ondoren dagoen taula edukita?</p>
+<p style="margin-left: 30px;">INSERT INTO BEZEROA VALUES (123, ‘Juan’, NULL, 321321)</p>
+<table style="float: left;" border="1" align="left">
+<tbody>
+<tr>
+<td>NAN</td>
+<td>Izena</td>
+<td>Helb</td>
+<td>Tfnoa</td>
+</tr>
+<tr>
+<td>111</td>
+<td>Juan</td>
+<td>Legazpi, 1</td>
+<td>111111</td>
+</tr>
+<tr>
+<td>222</td>
+<td>Pedro</td>
+<td>Guridi, 5</td>
+<td>222222</td>
+</tr>
+<tr>
+<td>333</td>
+<td>Gaizka</td>
+<td>Lardizabal, 10</td>
+<td>333333</td>
+</tr>
+<tr>
+<td>444</td>
+<td>Luisa</td>
+<td>Nagusia, 2</td>
+<td>444444</td>
+</tr>
+<tr>
+<td>555</td>
+<td>Ceferina</td>
+<td>Elkano, 3</td>
+<td>555555</td>
+</tr>
+<tr>
+<td>666</td>
+<td>Yolanda</td>
+<td>Cervantes, 7</td>
+<td>666666</td>
+</tr>
+<tr>
+<td>777</td>
+<td>Segismundo</td>
+<td>Velazquez, 9</td>
+<td>777777</td>
+</tr>
+<tr>
+<td>888</td>
+<td>Teodorico</td>
+<td>Sorolla, 4</td>
+<td>888888</td>
+</tr>
+<tr>
+<td>999</td>
+<td>Atenea</td>
+<td>Elkano, 14</td>
+<td>
+<p>999999</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ create table BEZEROA (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ NAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int not null,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Izena &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; varchar(20),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Helb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; varchar(20),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Tfnoa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ PRIMARY KEY(NAN),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ UNQUE(Izena))</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:11_answer" disabled="disabled" value="0" id="q697486:11_answer0"><label for="q697486:11_answer0" class="m-l-1"><span class="answernumber">a. </span>Gaizki dago, Tfnoa 123123 izan behar da</label> </div>
+<div class="r1"><input type="radio" name="q697486:11_answer" disabled="disabled" value="1" id="q697486:11_answer1"><label for="q697486:11_answer1" class="m-l-1"><span class="answernumber">b. </span>Ondo dago</label> </div>
+<div class="r0 correct"><input type="radio" name="q697486:11_answer" disabled="disabled" value="2" id="q697486:11_answer2" checked="checked"><label for="q697486:11_answer2" class="m-l-1"><span class="answernumber">c. </span>Gaizki dago, Juan izena taulan dago jada.</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:11_answer" disabled="disabled" value="3" id="q697486:11_answer3"><label for="q697486:11_answer3" class="m-l-1"><span class="answernumber">d. </span>Gaizki dago, INSERT batean ezin da NULL erabili</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Gaizki dago, Juan izena taulan dago jada.</div></div></div></div></div><div id="q12" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">12</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_128"><input type="hidden" name="q697486:12_:flagged" value="0"><input type="hidden" value="qaid=7102893&amp;qubaid=697486&amp;qid=13651714&amp;slot=12&amp;checksum=a053aab54c15a5dcac95c88557840ac8&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:12_:flaggedcheckbox" name="q697486:12_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:12_:sequencecheck" value="3"><div class="qtext"><p>Ondo dago honako agindu hau marrazkian dagoen taula edukita?</p>
+<ul>
+<li>KONTUA taulan KontuZbkia da gako nagusia</li>
+<li>(Bankua, SukZbkia) gako arrotza da, SUKURTSALAK taulako (Bankua, SukZbkia)-ri egiten dio erreferentzia.</li>
+<li>Ez dago beste gakorik.</li>
+</ul>
+<p style="margin-left: 30px;">UPDATE KONTUA SET Bankua = 2102, SukZbkia=3 WHERE KontuZbkia &gt;7</p>
+<table style="margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td align="center">KontuZbkia</td>
+<td align="center">Inte</td>
+<td align="center">Saldoa</td>
+<td align="center">Bankua</td>
+<td align="center">SukZnkia</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">20000</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">30000</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">40000</td>
+<td align="center">1</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">2</td>
+<td align="center">20000</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">40000</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">3</td>
+<td align="center">26000</td>
+<td align="center">2101</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">3</td>
+<td align="center">50000</td>
+<td align="center">2101</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">3</td>
+<td align="center">42000</td>
+<td align="center">2102</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">4</td>
+<td align="center">70000</td>
+<td align="center">2102</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">4</td>
+<td align="center">53000</td>
+<td align="center">2102</td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:12_answer" disabled="disabled" value="0" id="q697486:12_answer0"><label for="q697486:12_answer0" class="m-l-1"><span class="answernumber">a. </span>SUKURTSALAK taularen edukia ikusi gabe ezin dezakegu esan ondo edo gaizki dagoen</label> </div>
+<div class="r1"><input type="radio" name="q697486:12_answer" disabled="disabled" value="1" id="q697486:12_answer1"><label for="q697486:12_answer1" class="m-l-1"><span class="answernumber">b. </span>Gaizki dago, kasu honetan ezin da KontuZbkia &gt;7 erabili</label> </div>
+<div class="r0 incorrect"><input type="radio" name="q697486:12_answer" disabled="disabled" value="2" id="q697486:12_answer2" checked="checked"><label for="q697486:12_answer2" class="m-l-1"><span class="answernumber">c. </span>Ondo dago</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:12_answer" disabled="disabled" value="3" id="q697486:12_answer3"><label for="q697486:12_answer3" class="m-l-1"><span class="answernumber">d. </span>Gaizki dago, Bankua =2102 eta SukZbkia=3 dagoeneko erabilita izan dira KONTUA taulan</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: SUKURTSALAK taularen edukia ikusi gabe ezin dezakegu esan ondo edo gaizki dagoen</div></div></div></div></div><div id="q13" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">13</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_137"><input type="hidden" name="q697486:13_:flagged" value="0"><input type="hidden" value="qaid=7102894&amp;qubaid=697486&amp;qid=13651731&amp;slot=13&amp;checksum=73eb35e616461a6e055723ef7530a63d&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:13_:flaggedcheckbox" name="q697486:13_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:13_:sequencecheck" value="3"><div class="qtext"><p>Ondo
+ dago honako agindu hau marrazkian dagoen taula edukita? (KONTUA-BEZEROA
+ taulan KontuZbkia eta NAN atributuek osatzen dute gako nagusia)</p>
+<p style="margin-left: 30px;">UPDATE KONTUA-BEZEROA SET KontuZbkia = KontuZbkia + 1<br>&nbsp;&nbsp; &nbsp;WHERE KontuZbkia = 1</p>
+<table border="1" align="center">
+<tbody>
+<tr>
+<td>Kontu<br>Zbkia</td>
+<td>NAN</td>
+</tr>
+<tr>
+<td>0</td>
+<td>111</td>
+</tr>
+<tr>
+<td>0</td>
+<td>222</td>
+</tr>
+<tr>
+<td>0</td>
+<td>555</td>
+</tr>
+<tr>
+<td>1</td>
+<td>111</td>
+</tr>
+<tr>
+<td>2</td>
+<td>111</td>
+</tr>
+<tr>
+<td>2</td>
+<td>333</td>
+</tr>
+<tr>
+<td>3</td>
+<td>555</td>
+</tr>
+<tr>
+<td>3</td>
+<td>333</td>
+</tr>
+<tr>
+<td>4</td>
+<td>444</td>
+</tr>
+<tr>
+<td>4</td>
+<td>666</td>
+</tr>
+<tr>
+<td>4</td>
+<td>777</td>
+</tr>
+<tr>
+<td>5</td>
+<td>999</td>
+</tr>
+<tr>
+<td>5</td>
+<td>444</td>
+</tr>
+<tr>
+<td>5</td>
+<td>222</td>
+</tr>
+</tbody>
+</table></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:13_answer" disabled="disabled" value="0" id="q697486:13_answer0"><label for="q697486:13_answer0" class="m-l-1"><span class="answernumber">a. </span>Bai ondo dago</label> </div>
+<div class="r1"><input type="radio" name="q697486:13_answer" disabled="disabled" value="1" id="q697486:13_answer1"><label for="q697486:13_answer1" class="m-l-1"><span class="answernumber">b. </span>Ez dago ondo, KontuZbkia = 2 dagoeneko existitzen da</label> </div>
+<div class="r0"><input type="radio" name="q697486:13_answer" disabled="disabled" value="2" id="q697486:13_answer2"><label for="q697486:13_answer2" class="m-l-1"><span class="answernumber">c. </span>Ez dago ondo, SET zatian ezin da eragiketa aritmetikorik (kasu honetan batuketa) erabili</label> </div>
+<div class="r1 correct"><input type="radio" name="q697486:13_answer" disabled="disabled" value="3" id="q697486:13_answer3" checked="checked"><label for="q697486:13_answer3" class="m-l-1"><span class="answernumber">d. </span>Ez dago ondo, KontuZbkia = 2 eta NAN = 111 dagoeneko existitzen da</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Ez dago ondo, KontuZbkia = 2 eta NAN = 111 dagoeneko existitzen da</div></div></div></div></div><div id="q14" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">14</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_146"><input type="hidden" name="q697486:14_:flagged" value="0"><input type="hidden" value="qaid=7102895&amp;qubaid=697486&amp;qid=13651737&amp;slot=14&amp;checksum=e619ceb8a5e3b619e65164670e3bb892&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:14_:flaggedcheckbox" name="q697486:14_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:14_:sequencecheck" value="3"><div class="qtext"><p>Zer egiten du LEFT OUTER JOIN batek?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:14_answer" disabled="disabled" value="0" id="q697486:14_answer0"><label for="q697486:14_answer0" class="m-l-1"><span class="answernumber">a. </span>Bi tauletako tupla guztiak erakusten ditu, erlazionatuta daudenak elkarrekin jarriz</label> </div>
+<div class="r1 correct"><input type="radio" name="q697486:14_answer" disabled="disabled" value="1" id="q697486:14_answer1" checked="checked"><label for="q697486:14_answer1" class="m-l-1"><span class="answernumber">b. </span>Ezkerreko taula osoa hartzen du eta eskubikotik erlazionatuta dauden tuplak bakarrik erakusten ditu</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r0"><input type="radio" name="q697486:14_answer" disabled="disabled" value="2" id="q697486:14_answer2"><label for="q697486:14_answer2" class="m-l-1"><span class="answernumber">c. </span>Eskubiko taula osoa hartzen du eta ezkerrekotik erlazionatuta dauden tuplak bakarrik erakusten ditu</label> </div>
+<div class="r1"><input type="radio" name="q697486:14_answer" disabled="disabled" value="3" id="q697486:14_answer3"><label for="q697486:14_answer3" class="m-l-1"><span class="answernumber">d. </span>Erlazionatuta dauden tuplak bakarrik erakusten ditu</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Ezkerreko taula osoa hartzen du eta eskubikotik erlazionatuta dauden tuplak bakarrik erakusten ditu</div></div></div></div></div><div id="q15" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">15</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_155"><input type="hidden" name="q697486:15_:flagged" value="0"><input type="hidden" value="qaid=7102896&amp;qubaid=697486&amp;qid=13651726&amp;slot=15&amp;checksum=f2cd920a2b3bc02baab5d7588fe95429&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:15_:flaggedcheckbox" name="q697486:15_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:15_:sequencecheck" value="3"><div class="qtext"><p>‘Langilea’ taulak 20 tupla dituela jakinda, eta ‘Bezeroa’ taulak 10 tupla dituela jakinda, kontsulta honen emaitzak</p>
+<p style="margin-left: 30px;">SELECT Izena FROM Langilea<br>UNION<br>SELECT Izena FROM Bezeroa</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:15_answer" disabled="disabled" value="0" id="q697486:15_answer0"><label for="q697486:15_answer0" class="m-l-1"><span class="answernumber">a. </span>200 tupla izango ditu beti</label> </div>
+<div class="r1"><input type="radio" name="q697486:15_answer" disabled="disabled" value="1" id="q697486:15_answer1"><label for="q697486:15_answer1" class="m-l-1"><span class="answernumber">b. </span>20 tupla izango ditu beti</label> </div>
+<div class="r0"><input type="radio" name="q697486:15_answer" disabled="disabled" value="2" id="q697486:15_answer2"><label for="q697486:15_answer2" class="m-l-1"><span class="answernumber">c. </span>30 tupla izango ditu beti</label> </div>
+<div class="r1 incorrect"><input type="radio" name="q697486:15_answer" disabled="disabled" value="3" id="q697486:15_answer3" checked="checked"><label for="q697486:15_answer3" class="m-l-1"><span class="answernumber">d. </span>Zenbaki zehatza jakiteko datu gehiago behar ditugu, baina gehienez 30 tupla izango ditu</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: 30 tupla izango ditu beti</div></div></div></div></div><div id="q16" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">16</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_164"><input type="hidden" name="q697486:16_:flagged" value="0"><input type="hidden" value="qaid=7102897&amp;qubaid=697486&amp;qid=14496961&amp;slot=16&amp;checksum=ba7ac79559fdd273da5cb108e50900dd&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:16_:flaggedcheckbox" name="q697486:16_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:16_:sequencecheck" value="3"><div class="qtext"><p>Zertarako erabiltzen da GROUP BY?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q697486:16_answer" disabled="disabled" value="0" id="q697486:16_answer0" checked="checked"><label for="q697486:16_answer0" class="m-l-1"><span class="answernumber">a. </span>Tuplak multzokatzeko</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:16_answer" disabled="disabled" value="1" id="q697486:16_answer1"><label for="q697486:16_answer1" class="m-l-1"><span class="answernumber">b. </span>Tuplak ordenatzeko</label> </div>
+<div class="r0"><input type="radio" name="q697486:16_answer" disabled="disabled" value="2" id="q697486:16_answer2"><label for="q697486:16_answer2" class="m-l-1"><span class="answernumber">c. </span>Tuplen gainean baldintzak jartzeko</label> </div>
+<div class="r1"><input type="radio" name="q697486:16_answer" disabled="disabled" value="3" id="q697486:16_answer3"><label for="q697486:16_answer3" class="m-l-1"><span class="answernumber">d. </span>Talde baten gainean baldintzak jartzenko</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Tuplak multzokatzeko</div></div></div></div></div><div id="q17" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">17</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_173"><input type="hidden" name="q697486:17_:flagged" value="0"><input type="hidden" value="qaid=7102898&amp;qubaid=697486&amp;qid=14495760&amp;slot=17&amp;checksum=0f559f071b18a903fc37ec2b981ade74&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:17_:flaggedcheckbox" name="q697486:17_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:17_:sequencecheck" value="3"><div class="qtext"><p>Zertarako erabiltzen da HAVING?</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:17_answer" disabled="disabled" value="0" id="q697486:17_answer0"><label for="q697486:17_answer0" class="m-l-1"><span class="answernumber">a. </span>Funtzio agregatuen gainean baldintzak jartzeko</label> </div>
+<div class="r1"><input type="radio" name="q697486:17_answer" disabled="disabled" value="1" id="q697486:17_answer1"><label for="q697486:17_answer1" class="m-l-1"><span class="answernumber">b. </span>Funtzio agregatuak multzokatzeko</label> </div>
+<div class="r0 incorrect"><input type="radio" name="q697486:17_answer" disabled="disabled" value="2" id="q697486:17_answer2" checked="checked"><label for="q697486:17_answer2" class="m-l-1"><span class="answernumber">c. </span>Tuplen gainean baldintzak jartzeko</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:17_answer" disabled="disabled" value="3" id="q697486:17_answer3"><label for="q697486:17_answer3" class="m-l-1"><span class="answernumber">d. </span>Tuplak multzokatzeko</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Funtzio agregatuen gainean baldintzak jartzeko</div></div></div></div></div><div id="q18" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">18</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_182"><input type="hidden" name="q697486:18_:flagged" value="0"><input type="hidden" value="qaid=7102899&amp;qubaid=697486&amp;qid=14495763&amp;slot=18&amp;checksum=bb804de583dccc8b5c904805c92fd163&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:18_:flaggedcheckbox" name="q697486:18_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:18_:sequencecheck" value="3"><div class="qtext"><p>Bi kontsulta hauek emanda aukeratu erantzun zuzena:</p>
+<p style="margin-left: 30px;">SELECT COUNT (DISTINCT Soldata) FROM Taula<br>SELECT COUNT(Soldata) FROM Taula</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:18_answer" disabled="disabled" value="0" id="q697486:18_answer0"><label for="q697486:18_answer0" class="m-l-1"><span class="answernumber">a. </span>Bigarrenak NULL balioak kontatzen ditu eta lehenengoak ez</label> </div>
+<div class="r1 incorrect"><input type="radio" name="q697486:18_answer" disabled="disabled" value="1" id="q697486:18_answer1" checked="checked"><label for="q697486:18_answer1" class="m-l-1"><span class="answernumber">b. </span>Emaitza berdina emango dute Soldata Taula-ren gako arrotza bada</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+<div class="r0"><input type="radio" name="q697486:18_answer" disabled="disabled" value="2" id="q697486:18_answer2"><label for="q697486:18_answer2" class="m-l-1"><span class="answernumber">c. </span>Emaitza berdina emango dute Soldata Taula-ren gako nagusia bada</label> </div>
+<div class="r1"><input type="radio" name="q697486:18_answer" disabled="disabled" value="3" id="q697486:18_answer3"><label for="q697486:18_answer3" class="m-l-1"><span class="answernumber">d. </span>Lehenengoak NULL balioak kontatzen ditu eta bigarrenak ez</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Emaitza berdina emango dute Soldata Taula-ren gako nagusia bada</div></div></div></div></div><div id="q19" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">19</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_191"><input type="hidden" name="q697486:19_:flagged" value="0"><input type="hidden" value="qaid=7102900&amp;qubaid=697486&amp;qid=14495746&amp;slot=19&amp;checksum=17d7206d799932b529b66eeab2d492ab&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:19_:flaggedcheckbox" name="q697486:19_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:19_:sequencecheck" value="3"><div class="qtext"><p>Zer itzuliko du kontsulta honek?</p>
+<p style="margin-left: 30px;">Hotela (hId, izena, helbidea)<br>Logela (hId, lZbkia, mota, prezioa )<br>Erreserba (eKodea, hId, lZbkia, NAN, sarData, irtenData)<br>Bezeroa (NAN, izena, abizena, helbidea, telefonoa)<br><br>SELECT hId, AVG(prezioa)<br>FROM Logela<br>WHERE mota = ‘Suite’<br>GROUP BY hId</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:19_answer" disabled="disabled" value="0" id="q697486:19_answer0"><label for="q697486:19_answer0" class="m-l-1"><span class="answernumber">a. </span>Errorea, string-ekin ezin da ‘=’ erabili, LIKE erabili behar da beti</label> </div>
+<div class="r1"><input type="radio" name="q697486:19_answer" disabled="disabled" value="1" id="q697486:19_answer1"><label for="q697486:19_answer1" class="m-l-1"><span class="answernumber">b. </span>Logela bakoitzeko, bere Suite-n prezioen batezbestekoa</label> </div>
+<div class="r0 correct"><input type="radio" name="q697486:19_answer" disabled="disabled" value="2" id="q697486:19_answer2" checked="checked"><label for="q697486:19_answer2" class="m-l-1"><span class="answernumber">c. </span>Hotel bakoitzeko, bere Suite-n prezioen batezbestekoa</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:19_answer" disabled="disabled" value="3" id="q697486:19_answer3"><label for="q697486:19_answer3" class="m-l-1"><span class="answernumber">d. </span>Errorea, GROUP BY-ean AVG(prezioa) agertu behar da ere</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Hotel bakoitzeko, bere Suite-n prezioen batezbestekoa</div></div></div></div></div><div id="q20" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no"><span class="qno">20</span>. galdera</h3><div class="state">Zuzena</div><div class="grade">0,25 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_200"><input type="hidden" name="q697486:20_:flagged" value="0"><input type="hidden" value="qaid=7102901&amp;qubaid=697486&amp;qid=14495754&amp;slot=20&amp;checksum=c2f4eafe47934e612fbffe70c5a5cbda&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:20_:flaggedcheckbox" name="q697486:20_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:20_:sequencecheck" value="3"><div class="qtext"><p>Zer itzuliko du kontsulta honek?</p>
+<p style="margin-left: 30px;">Hotela (hId, izena, helbidea)<br>Logela (hId, lZbkia, mota, prezioa )<br>Erreserba (eKodea, hId, lZbkia, NAN, sarData, irtenData)<br>Bezeroa (NAN, izena, abizena, helbidea, telefonoa)</p>
+<p style="margin-left: 30px;">SELECT izena<br>FROM Hotela NATURAL JOIN Erreserba<br>WHERE helbidea LIKE ‘%Gasteiz’</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q697486:20_answer" disabled="disabled" value="0" id="q697486:20_answer0" checked="checked"><label for="q697486:20_answer0" class="m-l-1"><span class="answernumber">a. </span>Gasteizen dauden hotelen izena hotel hauek erreserbaren bat badute</label> <i class="icon fa fa-check text-success fa-fw " aria-hidden="true" title="Zuzena" aria-label="Zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:20_answer" disabled="disabled" value="1" id="q697486:20_answer1"><label for="q697486:20_answer1" class="m-l-1"><span class="answernumber">b. </span>Kontsulta
+ gaizki dago, izena Bezeroa taulan ere agertzen da, beraz zein 
+tauletatik lortzen den adierazi behar da (adibidez Hotela.izena jarriz)</label> </div>
+<div class="r0"><input type="radio" name="q697486:20_answer" disabled="disabled" value="2" id="q697486:20_answer2"><label for="q697486:20_answer2" class="m-l-1"><span class="answernumber">c. </span>Kontsulta gaizki dago, SELECT-ean helbidea agertu behar da ere</label> </div>
+<div class="r1"><input type="radio" name="q697486:20_answer" disabled="disabled" value="3" id="q697486:20_answer3"><label for="q697486:20_answer3" class="m-l-1"><span class="answernumber">d. </span>Gasteizen dauden hotel guztien izena</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Gasteizen dauden hotelen izena hotel hauek erreserbaren bat badute</div></div></div></div></div><div id="q21" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">21</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_209"><input type="hidden" name="q697486:21_:flagged" value="0"><input type="hidden" value="qaid=7102902&amp;qubaid=697486&amp;qid=14495812&amp;slot=21&amp;checksum=1224f6e4d7bc781572241a698341345e&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:21_:flaggedcheckbox" name="q697486:21_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:21_:sequencecheck" value="3"><div class="qtext"><p>Zer itzuliko du kontsulta honek?</p>
+<p style="margin-left: 30px;">Hotela (hId, izena, helbidea)<br>Logela (hId, lZbkia, mota, prezioa )<br>Erreserba (eKodea, hId, lZbkia, NAN, sarData, irtenData)<br>Bezeroa (NAN, izena, abizena, helbidea, telefonoa)<br><br>SELECT NAN FROM Bezeroa <br>&nbsp;&nbsp; EXCEPT <br>SELECT NAN FROM Erreserba where sarData &gt;= ‘2017-01-01’ and hId=4 and irtenData &lt;= ‘2017-12-31’</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:21_answer" disabled="disabled" value="0" id="q697486:21_answer0"><label for="q697486:21_answer0" class="m-l-1"><span class="answernumber">a. </span>2017 urtean hId=4 hotelean erreserbarik egin ez duten bezeroen NAN-a</label> </div>
+<div class="r1"><input type="radio" name="q697486:21_answer" disabled="disabled" value="1" id="q697486:21_answer1"><label for="q697486:21_answer1" class="m-l-1"><span class="answernumber">b. </span>2017 urtean hId=4 hotelean erreserbaren bat egin duten bezeroen NAN-a</label> </div>
+<div class="r0"><input type="radio" name="q697486:21_answer" disabled="disabled" value="2" id="q697486:21_answer2"><label for="q697486:21_answer2" class="m-l-1"><span class="answernumber">c. </span>2017 urtean baino lehen hId=4 hotelean erreserbaren bat egin duten bezeroen NAN-a</label> </div>
+<div class="r1 incorrect"><input type="radio" name="q697486:21_answer" disabled="disabled" value="3" id="q697486:21_answer3" checked="checked"><label for="q697486:21_answer3" class="m-l-1"><span class="answernumber">d. </span>2017 urtean erreserbarik egin ez duten bezeroen NAN-a</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: 2017 urtean hId=4 hotelean erreserbarik egin ez duten bezeroen NAN-a</div></div></div></div></div><div id="q22" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">22</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_218"><input type="hidden" name="q697486:22_:flagged" value="0"><input type="hidden" value="qaid=7102903&amp;qubaid=697486&amp;qid=14495820&amp;slot=22&amp;checksum=5030219c73b2071c9c989c0740d72fc3&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:22_:flaggedcheckbox" name="q697486:22_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:22_:sequencecheck" value="3"><div class="qtext"><p>Zer kontatzen du kontsulta honek?</p>
+<p style="margin-left: 30px;">Hotela (hId, izena, helbidea)<br>Logela (hId, lZbkia, mota, prezioa )<br>Erreserba (eKodea, hId, lZbkia, NAN, sarData, irtenData)<br>Bezeroa (NAN, izena, abizena, helbidea, telefonoa)<br><br>SELECT COUNT(DISTINCT B1.NAN)<br>FROM Bezeroa B1 INNER JOIN Bezeroa B2 ON B1.izena = B2.izena and B1.abizena = B2.abizena<br>WHERE B1.NAN&lt;&gt;B2.NAN</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:22_answer" disabled="disabled" value="0" id="q697486:22_answer0"><label for="q697486:22_answer0" class="m-l-1"><span class="answernumber">a. </span>Zenbat bezero ezberdin dauden beste bezero baten izen-abizen berdinekin</label> </div>
+<div class="r1 incorrect"><input type="radio" name="q697486:22_answer" disabled="disabled" value="1" id="q697486:22_answer1" checked="checked"><label for="q697486:22_answer1" class="m-l-1"><span class="answernumber">b. </span>Zenbat NAN ezberdin dauden izen-abizen hutsa ez duten bezeroen artean</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+<div class="r0"><input type="radio" name="q697486:22_answer" disabled="disabled" value="2" id="q697486:22_answer2"><label for="q697486:22_answer2" class="m-l-1"><span class="answernumber">c. </span>Errorea emango du, GROUP BY jartzea falta da</label> </div>
+<div class="r1"><input type="radio" name="q697486:22_answer" disabled="disabled" value="3" id="q697486:22_answer3"><label for="q697486:22_answer3" class="m-l-1"><span class="answernumber">d. </span>Izen-abizen bakoitzeko, zenbat NAN ezberdin daude</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Zenbat bezero ezberdin dauden beste bezero baten izen-abizen berdinekin</div></div></div></div></div><div id="q23" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">23</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_227"><input type="hidden" name="q697486:23_:flagged" value="0"><input type="hidden" value="qaid=7102904&amp;qubaid=697486&amp;qid=14495814&amp;slot=23&amp;checksum=9c41d68cd8e7d7837b2746dec44bf680&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:23_:flaggedcheckbox" name="q697486:23_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:23_:sequencecheck" value="3"><div class="qtext"><p>Konparatu bi kontsulta hauen emaitza:</p>
+<p style="margin-left: 30px;">SELECT *<br>FROM Taula<br>WHERE B = 1 or B=2 or B = 3<br><br>SELECT *<br>FROM Taula<br>WHERE B in (1,3)</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0 incorrect"><input type="radio" name="q697486:23_answer" disabled="disabled" value="0" id="q697486:23_answer0" checked="checked"><label for="q697486:23_answer0" class="m-l-1"><span class="answernumber">a. </span>Berdina dira beti</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:23_answer" disabled="disabled" value="1" id="q697486:23_answer1"><label for="q697486:23_answer1" class="m-l-1"><span class="answernumber">b. </span>Lehenengo emaitza bigarrenaren barruan dago beti</label> </div>
+<div class="r0"><input type="radio" name="q697486:23_answer" disabled="disabled" value="2" id="q697486:23_answer2"><label for="q697486:23_answer2" class="m-l-1"><span class="answernumber">c. </span>Bigarren emaitza lehenengoaren barruan dago beti</label> </div>
+<div class="r1"><input type="radio" name="q697486:23_answer" disabled="disabled" value="3" id="q697486:23_answer3"><label for="q697486:23_answer3" class="m-l-1"><span class="answernumber">d. </span>Ez dute zer ikusirik</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Bigarren emaitza lehenengoaren barruan dago beti</div></div></div></div></div><div id="q24" class="que multichoice deferredfeedback incorrect"><div class="info"><h3 class="no"><span class="qno">24</span>. galdera</h3><div class="state">Ez zuzena</div><div class="grade">0,00 gehienezko 0,25-(e)tik</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1588859592262_236"><input type="hidden" name="q697486:24_:flagged" value="0"><input type="hidden" value="qaid=7102905&amp;qubaid=697486&amp;qid=14496987&amp;slot=24&amp;checksum=3d6c4ca2817c6e02b9d8045eb8bf8bda&amp;sesskey=gjAEFKcDPR&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q697486:24_:flaggedcheckbox" name="q697486:24_:flagged" value="0"><input type="image" class="questionflagimage" src="2018%20partziala%20-%20testa_files/unflagged.png" title="Markatu galdera aurrerago kontsultatzeko" alt="Markatu gabea"><span class="questionflagtext" title="Markatu galdera aurrerago kontsultatzeko">Markatu galdera</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Galderaren testua</h4><input type="hidden" name="q697486:24_:sequencecheck" value="3"><div class="qtext"><p>Konparatu bi kontsulta hauen emaitza:</p>
+<p style="margin-left: 30px;">SELECT B, C<br>FROM Taula<br>GROUP BY B, C</p>
+<p style="margin-left: 30px;">SELECT B, C<br>FROM Taula</p></div><div class="ablock"><div class="prompt">Aukeratu bat:</div><div class="answer"><div class="r0"><input type="radio" name="q697486:24_answer" disabled="disabled" value="0" id="q697486:24_answer0"><label for="q697486:24_answer0" class="m-l-1"><span class="answernumber">a. </span>Bigarren emaitza lehenengoaren barruan dago</label> </div>
+<div class="r1"><input type="radio" name="q697486:24_answer" disabled="disabled" value="1" id="q697486:24_answer1"><label for="q697486:24_answer1" class="m-l-1"><span class="answernumber">b. </span>Ez dute zer ikusirik</label> </div>
+<div class="r0 incorrect"><input type="radio" name="q697486:24_answer" disabled="disabled" value="2" id="q697486:24_answer2" checked="checked"><label for="q697486:24_answer2" class="m-l-1"><span class="answernumber">c. </span>Berdina dira</label> <i class="icon fa fa-remove text-danger fa-fw " aria-hidden="true" title="Ez zuzena" aria-label="Ez zuzena"></i></div>
+<div class="r1"><input type="radio" name="q697486:24_answer" disabled="disabled" value="3" id="q697486:24_answer3"><label for="q697486:24_answer3" class="m-l-1"><span class="answernumber">d. </span>Lehenengo emaitza bigarrenaren barruan dago</label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedbacka</h4><div class="feedback"><div class="rightanswer">Erantzun zuzena hau da: Lehenengo emaitza bigarrenaren barruan dago</div></div></div></div></div><input type="hidden" name="sesskey" value="gjAEFKcDPR"><div class="submitbtns"></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://egela.ehu.eus/mod/quiz/view.php?id=2792914">Amaitu berrikusketa</a></div></div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section data-region="blocks-column" class="hidden-print">
+                        <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">&lt;span id="mod_quiz_navblock_title"&gt;Galdetegiaren nabigazioa&lt;/span&gt; saltatu</a>
+
+<section id="mod_quiz_navblock" class=" block block__fake  card mb-3" role="navigation" data-block="_fake" aria-labelledby="instance-0-header">
+
+    <div class="card-body">
+
+            <h5 id="instance-0-header" class="card-title">
+                <span id="mod_quiz_navblock_title">Galdetegiaren nabigazioa</span>
+            </h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><h3 class="mod_quiz-section-heading">Transakzioak</h3><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton1" title="Ez zuzena" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>1<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton2" title="Zuzena" data-quiz-page="0" href="#q2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>2<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton3" title="Zuzena" data-quiz-page="0" href="#q3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>3<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton4" title="Ez zuzena" data-quiz-page="0" href="#q4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>4<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><h3 class="mod_quiz-section-heading">SQL</h3><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton5" title="Zuzena" data-quiz-page="1" href="#q5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>5<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton6" title="Zuzena" data-quiz-page="1" href="#q6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>6<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton7" title="Zuzena" data-quiz-page="1" href="#q7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>7<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton8" title="Zuzena" data-quiz-page="1" href="#q8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>8<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton9" title="Zuzena" data-quiz-page="2" href="#q9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>9<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton10" title="Zuzena" data-quiz-page="2" href="#q10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>10<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton11" title="Zuzena" data-quiz-page="2" href="#q11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>11<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton12" title="Ez zuzena" data-quiz-page="2" href="#q12"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>12<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton13" title="Zuzena" data-quiz-page="3" href="#q13"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>13<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton14" title="Zuzena" data-quiz-page="3" href="#q14"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>14<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton15" title="Ez zuzena" data-quiz-page="3" href="#q15"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>15<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton16" title="Zuzena" data-quiz-page="3" href="#q16"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>16<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton17" title="Ez zuzena" data-quiz-page="4" href="#q17"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>17<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton18" title="Ez zuzena" data-quiz-page="4" href="#q18"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>18<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton19" title="Zuzena" data-quiz-page="4" href="#q19"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>19<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton20" title="Zuzena" data-quiz-page="4" href="#q20"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>20<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton21" title="Ez zuzena" data-quiz-page="5" href="#q21"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>21<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton22" title="Ez zuzena" data-quiz-page="5" href="#q22"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>22<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton23" title="Ez zuzena" data-quiz-page="5" href="#q23"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>23<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a><a class="qnbutton incorrect free btn btn-secondary thispage" id="quiznavbutton24" title="Ez zuzena" data-quiz-page="5" href="#q24"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Galdera </span>24<span class="accesshide"> Orri hau <span class="flagstate"></span></span></a></div><div class="othernav"><a href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;showall=0">Erakutsi orri bat aldi bakoitzean</a><a class="mod_quiz-next-nav" href="https://egela.ehu.eus/mod/quiz/view.php?id=2792914">Amaitu berrikusketa</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                    </section>
+                </div>
+            </div>
+                <div class="m-t-2 m-b-1">
+<div class="row">
+    <div class="col-md-4">        <div class="pull-left">
+                <a href="https://egela.ehu.eus/mod/resource/view.php?id=2769400&amp;forceview=1" id="prev-activity-link" class="" classes="btn btn-link" title="Ebazpena: 2partzialeko (2018) - zuzendua">◄ Ebazpena: 2partzialeko (2018) - zuzendua</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://egela.ehu.eus/course/jumpto.php" class="form-inline" id="url_select_f5eb412c8ee5da22">
+        <input type="hidden" name="sesskey" value="gjAEFKcDPR">
+            <label for="jump-to-activity" class="sr-only">
+                Joan hona...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="selected">Joan hona...</option>
+                    <option value="/mod/collaborate/view.php?id=2665785&amp;forceview=1">Bideokonferentziarako esteka</option>
+                    <option value="/mod/forum/view.php?id=1709261&amp;forceview=1">Berrien foroa</option>
+                    <option value="/mod/forum/view.php?id=1709333&amp;forceview=1">Ikasleen zalantzetako foroa</option>
+                    <option value="/mod/resource/view.php?id=1709326&amp;forceview=1">Aurkezpena</option>
+                    <option value="/mod/assign/view.php?id=2660942&amp;forceview=1">Diseinuko notak</option>
+                    <option value="/mod/resource/view.php?id=2756789&amp;forceview=1">Aceduación del Plan de docencia y evaluación</option>
+                    <option value="/mod/resource/view.php?id=2756743&amp;forceview=1">2 partziala (2018)</option>
+                    <option value="/mod/resource/view.php?id=2769400&amp;forceview=1">Ebazpena: 2partzialeko (2018) - zuzendua</option>
+                    <option value="/mod/quiz/view.php?id=2792918&amp;forceview=1">2018 partziala - SQL ariketak</option>
+                    <option value="/mod/collaborate/view.php?id=2802035&amp;forceview=1">Azterketako zalantzak</option>
+                    <option value="/mod/quiz/view.php?id=2793411&amp;forceview=1">2 partziala - testa</option>
+                    <option value="/mod/quiz/view.php?id=2796403&amp;forceview=1">2 partziala - SQL ariketak</option>
+                    <option value="/mod/resource/view.php?id=1709346&amp;forceview=1">LEHEN GAIA</option>
+                    <option value="/mod/resource/view.php?id=1709351&amp;forceview=1">Bigarren gaia - Gardenki 1 orri bakoitzeko</option>
+                    <option value="/mod/resource/view.php?id=2615873&amp;forceview=1">Bigarren gaia - 6 gardenki orri bakoitzeko</option>
+                    <option value="/mod/resource/view.php?id=1709353&amp;forceview=1">EEEreduarenKontzeptuak</option>
+                    <option value="/mod/resource/view.php?id=1709364&amp;forceview=1">Unibertsitatea</option>
+                    <option value="/mod/resource/view.php?id=1709361&amp;forceview=1">Kamioiak ariketa</option>
+                    <option value="/mod/resource/view.php?id=1709362&amp;forceview=1">Kamioak ariketaren ebazpena</option>
+                    <option value="/mod/resource/view.php?id=1709366&amp;forceview=1">2. gaiko 7 ariketa</option>
+                    <option value="/mod/resource/view.php?id=1709369&amp;forceview=1">Lehenengo 4 ariketen ebazpena</option>
+                    <option value="/mod/resource/view.php?id=1709371&amp;forceview=1">Ontziak ariketaren ebazpena</option>
+                    <option value="/mod/resource/view.php?id=1709374&amp;forceview=1">Herriko liburutegiko ebazpena</option>
+                    <option value="/mod/resource/view.php?id=1709379&amp;forceview=1">2001eko ekaina (jatetxea)</option>
+                    <option value="/mod/resource/view.php?id=1709384&amp;forceview=1">2001eko iraila (zinemaldia)</option>
+                    <option value="/mod/resource/view.php?id=1709386&amp;forceview=1">2001eko iraila (ebatzita)</option>
+                    <option value="/mod/resource/view.php?id=1709389&amp;forceview=1">2002ko ekaina (futbol mundiala)</option>
+                    <option value="/mod/resource/view.php?id=1709391&amp;forceview=1">2002ko ekaina (ebatzita)</option>
+                    <option value="/mod/resource/view.php?id=1709392&amp;forceview=1">2002ko iraila (autobus zenbitzua)</option>
+                    <option value="/mod/resource/view.php?id=1709394&amp;forceview=1">2002ko iraila (ebatzita)</option>
+                    <option value="/mod/resource/view.php?id=1709396&amp;forceview=1">2003ko ekaina (kopia denda)</option>
+                    <option value="/mod/resource/view.php?id=2649259&amp;forceview=1">2003ko ekaina (ebatzita)</option>
+                    <option value="/mod/resource/view.php?id=1709401&amp;forceview=1">2003ko iraila (obrak)</option>
+                    <option value="/mod/resource/view.php?id=1709403&amp;forceview=1">2003ko iraila (ebatzita)</option>
+                    <option value="/mod/resource/view.php?id=1709405&amp;forceview=1">2004ko ekaina (txirrindulariak)</option>
+                    <option value="/mod/resource/view.php?id=1709409&amp;forceview=1">2004ko iraila</option>
+                    <option value="/mod/resource/view.php?id=1709411&amp;forceview=1">2005eko ekaina</option>
+                    <option value="/mod/resource/view.php?id=1709429&amp;forceview=1">3. Gaia - 6 gardenki orri bakoitzeko Fitxategia</option>
+                    <option value="/mod/resource/view.php?id=2615937&amp;forceview=1">3. Gaia - Gardenki 1 orri bakoitzeko</option>
+                    <option value="/mod/resource/view.php?id=1709433&amp;forceview=1">LAUGARREN GAIA</option>
+                    <option value="/mod/resource/view.php?id=1709441&amp;forceview=1">SQL_aginduen_laburpena</option>
+                    <option value="/mod/resource/view.php?id=1709446&amp;forceview=1">Hondakin Toxikoak (Ariketa)</option>
+                    <option value="/mod/resource/view.php?id=1709448&amp;forceview=1">Hondakin Toxikoak (Oinarrizko ariketak)</option>
+                    <option value="/mod/resource/view.php?id=1709451&amp;forceview=1">Hondakin Toxikoak (Ariketak 6-15)</option>
+                    <option value="/mod/resource/view.php?id=2653612&amp;forceview=1">Ebazpena: Hondakin Toxikoak (datu-basearen sorkuntza)</option>
+                    <option value="/mod/resource/view.php?id=2687190&amp;forceview=1">Ebazpena: Hondakin Toxikoak (Oinarrizko ariketak)</option>
+                    <option value="/mod/resource/view.php?id=2708709&amp;forceview=1">Ebazpena: Hondakin Toxikoak</option>
+                    <option value="/mod/resource/view.php?id=1709458&amp;forceview=1">Ibilbide ariketa</option>
+                    <option value="/mod/resource/view.php?id=2729440&amp;forceview=1">Ebazena: Ibilbideak</option>
+                    <option value="/mod/resource/view.php?id=1709465&amp;forceview=1">Enpresa</option>
+                    <option value="/mod/resource/view.php?id=2687174&amp;forceview=1">Ebazpena: Enpresa (Oinarriko Ariketak)</option>
+                    <option value="/mod/resource/view.php?id=2689709&amp;forceview=1">Ebazpena: Enpresa</option>
+                    <option value="/mod/resource/view.php?id=1709468&amp;forceview=1">Liburutegia</option>
+                    <option value="/mod/resource/view.php?id=1709471&amp;forceview=1">Liburutegia (oinarrizko ariketak)</option>
+                    <option value="/mod/resource/view.php?id=1709473&amp;forceview=1">Ebazpena: Liburutegia</option>
+                    <option value="/mod/resource/view.php?id=1709462&amp;forceview=1">Bankua</option>
+                    <option value="/mod/resource/view.php?id=1709464&amp;forceview=1">Ebazpena: Bankua</option>
+                    <option value="/mod/resource/view.php?id=1709479&amp;forceview=1">BOSGARREN GAIA</option>
+                    <option value="/mod/resource/view.php?id=1709483&amp;forceview=1">1.laborategia: MySQL</option>
+                    <option value="/mod/resource/view.php?id=1709485&amp;forceview=1">2. laborategia: Diseinua</option>
+                    <option value="/mod/resource/view.php?id=1709488&amp;forceview=1">3. laborategia: Diseinua II</option>
+                    <option value="/mod/resource/view.php?id=1709494&amp;forceview=1">3. laborategia (ebatzita)</option>
+                    <option value="/mod/resource/view.php?id=2633787&amp;forceview=1">3. laborategia: SQL</option>
+                    <option value="/mod/resource/view.php?id=1709486&amp;forceview=1">enpresa.sql</option>
+                    <option value="/mod/resource/view.php?id=2636345&amp;forceview=1">3. laborategia: SQL (ebatzia)</option>
+                    <option value="/mod/resource/view.php?id=1709490&amp;forceview=1">4. laborategia: java eta MySQL</option>
+                    <option value="/mod/resource/view.php?id=2640413&amp;forceview=1">jokoaSortu.java</option>
+                    <option value="/mod/resource/view.php?id=2640407&amp;forceview=1">jokoa.sql</option>
+                    <option value="/mod/resource/view.php?id=1709496&amp;forceview=1">5. laborategia: SQL Island</option>
+                    <option value="/mod/resource/view.php?id=2648349&amp;forceview=1">Proiektuaren enuntziatua</option>
+                    <option value="/mod/resource/view.php?id=2657624&amp;forceview=1">datu-baseen esportazio eta inportazioa</option>
+                    <option value="/mod/assign/view.php?id=1709519&amp;forceview=1">Proiektuaren dokumentazioa igotzeko esteka</option>
+                    <option value="/mod/assign/view.php?id=2772949&amp;forceview=1">Proiektuaren aurkezpena igotzeko esteka</option>
+                    <option value="/mod/resource/view.php?id=2653228&amp;forceview=1">Azterketako notak</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Joan">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="pull-right">
+                <a href="https://egela.ehu.eus/mod/quiz/view.php?id=2792918&amp;forceview=1" id="next-activity-link" class="" classes="btn btn-link" title="2018 partziala - SQL ariketak">2018 partziala - SQL ariketak ►</a>
+
+        </div>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_26020_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/user/index.php?id=21097" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="21097">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-users fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Partaideak</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/badges/view.php?type=2&amp;id=21097" data-key="badgesview" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="21097">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-shield fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Dominak</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/grade/report/index.php?id=21097" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="21097">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-table fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Kalifikazioak</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097" data-key="localboostnavigationcoursesections" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="21097" aria-controls="localboostnavigation424784 localboostnavigation424785 localboostnavigation424786 localboostnavigation424787 localboostnavigation424788 localboostnavigation424793 localboostnavigation424794" aria-expanded="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-fw fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Atalak</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action active" href="https://egela.ehu.eus/course/view.php?id=21097#section-0" data-key="424784" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="localboostnavigationcoursesections" id="localboostnavigation424784">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body font-weight-bold">Orokorra</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097#section-1" data-key="424785" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="localboostnavigationcoursesections" id="localboostnavigation424785">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Gaia 1</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097#section-2" data-key="424786" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="localboostnavigationcoursesections" id="localboostnavigation424786">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Gaia 2</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097#section-3" data-key="424787" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="localboostnavigationcoursesections" id="localboostnavigation424787">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Gaia 3</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097#section-4" data-key="424788" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="localboostnavigationcoursesections" id="localboostnavigation424788">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Gaia 4</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097#section-5" data-key="424793" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="localboostnavigationcoursesections" id="localboostnavigation424793">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Gaia 5</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097#section-6" data-key="424794" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="localboostnavigationcoursesections" id="localboostnavigation424794">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">LABORATEGIAK ETA PROIEKTUA</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-home fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Hasiera</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/my/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="home">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-tachometer fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Aginte-panela</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/calendar/view.php?view=month&amp;course=21097" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-calendar fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Egutegia</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-file-o fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Fitxategi pribatuak</span>
+                    </div>
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="home">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body">Nire ikastaroak: Martxan</span>
+                    </div>
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=26553" data-key="26553" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_AVGC1</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=21097" data-key="21097" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_26020_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=22088" data-key="22088" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_27700_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=28225" data-key="28225" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_25989_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=24461" data-key="24461" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_27672_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=32792" data-key="32792" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">KISIIG Koordinazioa / Coordinación GIIGSI</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=25168" data-key="25168" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_26023_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=27955" data-key="27955" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_27694_31</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=29146" data-key="29146" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_27699_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/course/view.php?id=28183" data-key="28183" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1542">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">20190_363_GIIGSI30_27698_46</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://egela.ehu.eus/my/?myoverviewtab=courses" data-key="courseindexpage" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-fw fa-fw " aria-hidden="true" aria-label=""></i>
+                        </span>
+                        <span class="media-body ">Gehiago...</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+<a href="#" id="back-to-top" class="btn btn-primary btn-lg" role="button" title="Itzuli gora eta Scrollspy"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+
+<footer id="page-footer" class="py-3 text-light">
+    <div class="container">
+
+      <div class="d-none d-md-block">
+        <div id="course-footer">
+          
+        </div>
+
+        <div class="row">
+          <div id="custom_footer" class="col-md-8">
+               
+              <a href="https://www.ehu.eus/eu/web/guest/lege-oharra" target="_blank"><div class="text_to_html">Pribatutasun politika    </div></a>
+              <a class="footer_divider"></a>
+                
+              <a href="https://www.ehu.eus/documents/1852718/2592347/20170405_eGela+erabiltzeko+baldintzak/fb58d471-8880-4b46-a36a-82f9631bfa06" target="_blank"><div class="text_to_html">Erabiltzeko baldintzak      </div></a>
+              <a class="footer_divider"></a>
+                
+              <a href="https://www.ehu.eus/eu/web/ikt-tic/eaz-cau-kontaktua-ordutegiak" target="_blank"><div class="text_to_html">Intzidentziak     </div></a>
+                     
+              <div class="logininfo"><a href="https://egela.ehu.eus/user/profile.php?id=56548" title="Ikusi profila">ANDER PRIETO LÓPEZ</a> barruan da (<a href="https://egela.ehu.eus/login/logout.php?sesskey=gjAEFKcDPR">Irten</a>)</div>
+          </div>
+
+          <div class="col-md-4">
+          	  <a href="https://www.ehu.eus/web/ecampus/home" target="_blank">
+              	<img class="logo_ecampus" src="2018%20partziala%20-%20testa_files/logoECAMPUS.png" alt="egela 2019-20">
+              </a>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="d-md-none">
+
+        <div id="course-footer">
+          
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+             
+            <a href="https://www.ehu.eus/eu/web/ecampus/ikasgela-birtualak-ik"><div class="text_to_html"> Ikasleentzako material erabilgarria </div></a>
+              
+            <a href="https://www.ehu.eus/eu/web/ecampus/manuales"><div class="text_to_html">  Irakasleentzako material erabilgarria </div></a>
+                     
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div id="custom_footer" class="col-md-12">
+               
+              <a href="https://www.ehu.eus/eu/web/guest/lege-oharra" target="_blank"><div class="text_to_html">Pribatutasun politika    </div></a>
+              <a class="footer_divider"></a>
+                
+              <a href="https://www.ehu.eus/documents/1852718/2592347/20170405_eGela+erabiltzeko+baldintzak/fb58d471-8880-4b46-a36a-82f9631bfa06" target="_blank"><div class="text_to_html">Erabiltzeko baldintzak      </div></a>
+              <a class="footer_divider"></a>
+                
+              <a href="https://www.ehu.eus/eu/web/ikt-tic/eaz-cau-kontaktua-ordutegiak" target="_blank"><div class="text_to_html">Intzidentziak     </div></a>
+                     
+              <div class="logininfo"><a href="https://egela.ehu.eus/user/profile.php?id=56548" title="Ikusi profila">ANDER PRIETO LÓPEZ</a> barruan da (<a href="https://egela.ehu.eus/login/logout.php?sesskey=gjAEFKcDPR">Irten</a>)</div>
+          </div>
+        </div>
+
+          <ul class="list-unstyled pt-3">
+                              <li><a href="#" title="Hizkuntza">Euskara ‎(eu)‎</a></li>
+                          <li>
+                              <ul class="list-unstyled ml-3">
+                                                  <li><a href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=de" title="Deutsch ‎(de)‎">Deutsch ‎(de)‎</a></li>
+                                                  <li><a href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                                  <li><a href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=es" title="Español ‎(es)‎">Español ‎(es)‎</a></li>
+                                                  <li><a href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=eu" title="Euskara ‎(eu)‎">Euskara ‎(eu)‎</a></li>
+                                                  <li><a href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=fr" title="Français ‎(fr)‎">Français ‎(fr)‎</a></li>
+                                                  <li><a href="https://egela.ehu.eus/mod/quiz/review.php?attempt=589620&amp;cmid=2792914&amp;lang=it" title="Italiano ‎(it)‎">Italiano ‎(it)‎</a></li>
+                              </ul>
+                          </li>
+          </ul>
+
+        <div class="row">
+          <div class="col-md-12">
+          	<a href="https://www.ehu.eus/web/ecampus/home" target="_blank">
+              <img class="logo_ecampus" src="2018%20partziala%20-%20testa_files/logoECAMPUS.png" alt="egela 2019-20">
+             </a>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="2018%20partziala%20-%20testa_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-98997857-3');
+</script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://egela.ehu.eus/lib/requirejs.php/1583410400/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://egela.ehu.eus/lib/javascript.php/1583410400/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://egela.ehu.eus/lib/javascript.php/1583410400/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://egela.ehu.eus/lib/javascript.php/1583410400/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="2018%20partziala%20-%20testa_files/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://egela.ehu.eus/media/player/videojs/videojs/video-js.swf";
+
+    });
+});;
+require(["local_boostnavigation/collapsenavdrawernodes"], function(amd) { amd.init(["localboostnavigationcoursesections"]); });;
+
+require(['jquery'], function($) {
+    $('#single_select5eb412c8ee5da5').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5eb412c8ee5da4').submit();
+        }
+    });
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select5eb412c8ee5da8').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5eb412c8ee5da7').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                $('#url_select_f5eb412c8ee5da22').submit();
+            });
+        });
+    ;
+
+require(['jquery'], function($) {
+    $('#single_select5eb412c8ee5da24').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5eb412c8ee5da23').submit();
+        }
+    });
+});
+;
+
+require(['theme_boost/loader']);
+require(['jquery','theme_boost/tooltip'], function($){$('[data-tooltip="tooltip"]').tooltip()});
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(3407008, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/egela.ehu.eus\/lib\/javascript.php\/1583410400\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/egela.ehu.eus\/lib\/javascript.php\/1583410400\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script type="text/javascript" src="2018%20partziala%20-%20testa_files/scrolltotop.js"></script>
+<script type="text/javascript" src="2018%20partziala%20-%20testa_files/scrollspy.js"></script>
+<script type="text/javascript" src="2018%20partziala%20-%20testa_files/tooltipfix.js"></script>
+<script type="text/javascript" src="2018%20partziala%20-%20testa_files/blockslider.js"></script>
+<script type="text/javascript" src="2018%20partziala%20-%20testa_files/courseblock.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Azken aldaketa","name":"Izena","error":"Errorea","info":"Informazioa","yes":"Bai","no":"Ez","ok":"Ados","cancel":"Utzi","changesmadereallygoaway":"Aldaketak egin dituzu. Ziur zaude irten eta aldaketak galdu nahi dituzula?","confirm":"Baieztatu","areyousure":"Ziur zaude?","closebuttontitle":"Itxi","unknownerror":"Errore ezezaguna"},"repository":{"type":"Mota","size":"Tamaina","invalidjson":"JSON katea ez da baliagarria","nofilesattached":"Ez dago erantsitako fitxategirik","filepicker":"Fitxategi-hautatzailea","logout":"Amaitu saioa","nofilesavailable":"Ez dago fitxategirik eskuragarri","norepositoriesavailable":"Sentitzen dugu, oraingo biltegietatik batek ere ezin du eskatutako formatuan fitxategirik bueltatu.","fileexistsdialogheader":"Fitxategia dagoeneko badago","fileexistsdialog_editor":"Lehendik izen hori duen fitxategi bat txertatu da editatzen ari zaren testuan.","fileexistsdialog_filemanager":"Lehendik izen hori duen fitxategi bat txertatu da","renameto":"Berrizendatu honela: \"{$a}\"","referencesexist":"{$a} ezizen\/esteka daude fitxategi hau jatorritzat dutenak.","select":"Aukeratu"},"admin":{"confirmdeletecomments":"Iruzkinak ezabatzeko zorian zaude, ziur zaude?","confirmation":"Baieztatzea"},"question":{"flagged":"Markatuta"},"quiz":{"functiondisabledbysecuremode":"Funtzionalitate hau une honetan desgaituta dago","startattempt":"Hasi saiakera","timesup":"Denbora amaitu egin da!"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+ M.util.js_pending('random5eb412c8ee5da1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/egela.ehu.eus\/question\/toggleflag.php", [{"src":"https:\/\/egela.ehu.eus\/theme\/image.php\/ehu\/core\/1588832984\/i\/unflagged","title":"Markatu galdera aurrerago kontsultatzeko","alt":"Markatu gabea"},{"src":"https:\/\/egela.ehu.eus\/theme\/image.php\/ehu\/core\/1588832984\/i\/flagged","title":"Kendu marka","alt":"Markatuta"}], ["Markatu galdera","Kendu marka"]);  M.util.js_complete('random5eb412c8ee5da1'); });
+ M.util.js_pending('random5eb412c8ee5da2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5eb412c8ee5da2'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5eb412c8ee5da25'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random5eb412c8ee5da25'); });
+ M.util.js_pending('random5eb412c8ee5da26'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5eb412c8ee5da26'); });
+})();
+//]]>
+</script>
+
+
+    </div>
+
+</footer>
+
+
+</body></html>

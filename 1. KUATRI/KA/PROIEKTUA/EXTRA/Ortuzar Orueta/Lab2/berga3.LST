@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  BERGA3                                                               09/25/2019 19:23:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V6.14
+OBJECT MODULE PLACED IN .\berga3.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE .\berga3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     INICIO:
+0000 797F              2     MOV R1,#7FH
+0002 740F              3     MOV A,#0FH
+0004 F7                4     MOV @R1,A
+0005 7981              5     MOV R1,#81H
+0007 7411              6     MOV A,#11H
+0009 F7                7     MOV @R1,A
+                       8     END
+                             
+A51 MACRO ASSEMBLER  BERGA3                                                               09/25/2019 19:23:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+INICIO . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
